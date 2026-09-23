@@ -1,0 +1,298 @@
+[
+  {
+    "name": "🌎 Bộ 1: Đoán Quốc Gia Châu Á & Châu Âu",
+    "topic": "🌎 ĐOÁN QUỐC GIA",
+    "fromFlag": "🌎",
+    "toFlag": "🚩",
+    "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+    "mode": "country-guess",
+    "questions": [
+      {
+        "id": "country-japan",
+        "topic": "🌎 ĐOÁN QUỐC GIA",
+        "country": "Nhật Bản",
+        "flag": "🇯🇵",
+        "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+        "mode": "country-guess",
+        "clues": [
+          { "step": 1, "icon": "🌏", "text": "Quốc gia này nằm ở khu vực Đông Á.", "image": "https://images.unsplash.com/photo-1540573133985-7789883c8255?w=800" },
+          { "step": 2, "icon": "🍣", "text": "Món ăn Sushi & Ramen cực kỳ nổi tiếng.", "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800" },
+          { "step": 3, "icon": "🗻", "text": "Có ngọn núi Phú Sĩ phủ tuyết trắng.", "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800" },
+          { "step": 4, "icon": "🌸", "text": "Được mệnh danh là Xứ sở Hoa Anh Đào.", "image": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800" },
+          { "step": 5, "icon": "🗼", "text": "Thủ đô là Tokyo sầm uất & hiện đại.", "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=800" }
+        ],
+        "explanation": "Nhật Bản 🇯🇵 (Thủ đô Tokyo, Núi Phú Sĩ & Văn hóa Kimono)"
+      },
+      {
+        "id": "country-france",
+        "topic": "🌎 ĐOÁN QUỐC GIA",
+        "country": "Nước Pháp",
+        "flag": "🇫🇷",
+        "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+        "mode": "country-guess",
+        "clues": [
+          { "step": 1, "icon": "🇪🇺", "text": "Quốc gia này nằm ở khu vực Tây Âu.", "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800" },
+          { "step": 2, "icon": "🥖", "text": "Nổi tiếng với Bánh Mì Sừng Bò & Rượu Vang.", "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800" },
+          { "step": 3, "icon": "🗼", "text": "Có Tháp Eiffel biểu tượng kỳ vĩ.", "image": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800" },
+          { "step": 4, "icon": "⚽", "text": "Từng 2 lần vô địch World Cup bóng đá.", "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800" },
+          { "step": 5, "icon": "🎨", "text": "Thủ đô Paris - Kinh đô Ánh Sáng & Thời Trang.", "image": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800" }
+        ],
+        "explanation": "Nước Pháp 🇫🇷 (Thủ đô Paris, Tháp Eiffel & Kinh đô thời trang)"
+      },
+      {
+        "id": "country-egypt",
+        "topic": "🌎 ĐOÁN QUỐC GIA",
+        "country": "Ai Cập",
+        "flag": "🇪🇬",
+        "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+        "mode": "country-guess",
+        "clues": [
+          { "step": 1, "icon": "🌍", "text": "Nằm ở giao điểm Bắc Phi & Tây Á.", "image": "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?w=800" },
+          { "step": 2, "icon": "🏜️", "text": "Bao phủ bởi sa mạc Sahara rộng lớn.", "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=800" },
+          { "step": 3, "icon": "🌊", "text": "Có dòng sông Nile dài nhất thế giới chảy qua.", "image": "https://images.unsplash.com/photo-1572252821143-035a0247c4e2?w=800" },
+          { "step": 4, "icon": "👑", "text": "Nơi sinh sống của các Pharaoh huyền thoại.", "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800" },
+          { "step": 5, "icon": "🔺", "text": "Nổi tiếng với Kim Tự Tháp Giza & Tượng Nhân Sư.", "image": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?w=800" }
+        ],
+        "explanation": "Ai Cập 🇪🇬 (Thủ đô Cairo, Kim Tự Tháp Giza & Sông Nile)"
+      },
+      {
+        "id": "country-italy",
+        "topic": "🌎 ĐOÁN QUỐC GIA",
+        "country": "Nước Ý (Italy)",
+        "flag": "🇮🇹",
+        "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+        "mode": "country-guess",
+        "clues": [
+          { "step": 1, "icon": "🍕", "text": "Quê hương của món Pizza & Mỳ Spaghetti.", "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800" },
+          { "step": 2, "icon": "🏛️", "text": "Có Đấu trường La Mã Colosseum cổ kính.", "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800" },
+          { "step": 3, "icon": "🗼", "text": "Nổi tiếng với Tháp nghiêng Pisa kỳ lạ.", "image": "https://images.unsplash.com/photo-1543429776-2782fc8e1acd?w=800" },
+          { "step": 4, "icon": "🚣", "text": "Thành phố trên sông Venice lãng mạn.", "image": "https://images.unsplash.com/photo-1514896856000-91cb6de818e0?w=800" },
+          { "step": 5, "icon": "🇻🇦", "text": "Quốc gia hình chiếc ủng bao quanh Vatican.", "image": "https://images.unsplash.com/photo-1531572753322-ad063cecc140?w=800" }
+        ],
+        "explanation": "Nước Ý 🇮🇹 (Thủ đô Rome, Pizza, Tháp Pisa & Đấu trường Colosseum)"
+      }
+    ]
+  },
+  {
+    "name": "🌎 Bộ 2: Đoán Quốc Gia Châu Mỹ & Châu Á",
+    "topic": "🌎 ĐOÁN QUỐC GIA",
+    "fromFlag": "🌎",
+    "toFlag": "🚩",
+    "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+    "mode": "country-guess",
+    "questions": [
+      {
+        "id": "country-usa",
+        "topic": "🌎 ĐOÁN QUỐC GIA",
+        "country": "Nước Mỹ (Hoa Kỳ)",
+        "flag": "🇺🇸",
+        "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+        "mode": "country-guess",
+        "clues": [
+          { "step": 1, "icon": "🌎", "text": "Nằm ở khu vực Bắc Mỹ rộng lớn.", "image": "https://images.unsplash.com/photo-1508433957232-3107f5fd5995?w=800" },
+          { "step": 2, "icon": "🎬", "text": "Có trung tâm điện ảnh Hollywood đỉnh cao.", "image": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=800" },
+          { "step": 3, "icon": "🗽", "text": "Nổi tiếng với Tượng Nữ Thần Tự Do.", "image": "https://images.unsplash.com/photo-1605130284535-11dd9eedc58a?w=800" },
+          { "step": 4, "icon": "🍔", "text": "Nơi khởi nguồn của Hamburger & Fastfood.", "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800" },
+          { "step": 5, "icon": "🏛️", "text": "Thủ đô là Washington D.C & Nhà Trắng.", "image": "https://images.unsplash.com/photo-1501469537446-d446a8c437a3?w=800" }
+        ],
+        "explanation": "Nước Mỹ 🇺🇸 (Thủ đô Washington D.C, Tượng Nữ Thần Tự Do)"
+      },
+      {
+        "id": "country-korea",
+        "topic": "🌎 ĐOÁN QUỐC GIA",
+        "country": "Hàn Quốc",
+        "flag": "🇰🇷",
+        "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+        "mode": "country-guess",
+        "clues": [
+          { "step": 1, "icon": "🌏", "text": "Nằm trên bán đảo Triều Tiên ở Đông Á.", "image": "https://images.unsplash.com/photo-1538485399081-7191377e8241?w=800" },
+          { "step": 2, "icon": "🥬", "text": "Nổi tiếng thế giới với món Kim Chi truyền thống.", "image": "https://images.unsplash.com/photo-1583224964978-2257b960c3d3?w=800" },
+          { "step": 3, "icon": "🎵", "text": "Quê hương của làn sóng âm nhạc K-Pop (BTS, Blackpink).", "image": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800" },
+          { "step": 4, "icon": "📱", "text": "Nơi ra đời của tập đoàn công nghệ Samsung.", "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=800" },
+          { "step": 5, "icon": "🏙️", "text": "Thủ đô là Seoul sôi động & hiện đại.", "image": "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=800" }
+        ],
+        "explanation": "Hàn Quốc 🇰🇷 (Thủ đô Seoul, Kim Chi, K-Pop & Samsung)"
+      },
+      {
+        "id": "country-brazil",
+        "topic": "🌎 ĐOÁN QUỐC GIA",
+        "country": "Brazil",
+        "flag": "🇧🇷",
+        "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+        "mode": "country-guess",
+        "clues": [
+          { "step": 1, "icon": "🌎", "text": "Quốc gia lớn nhất khu vực Nam Mỹ.", "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=800" },
+          { "step": 2, "icon": "🌳", "text": "Sở hữu rừng rậm Amazon - Lá phổi xanh Trái Đất.", "image": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800" },
+          { "step": 3, "icon": "💃", "text": "Nổi tiếng với điệu nhảy Samba & Lễ hội Carnival.", "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800" },
+          { "step": 4, "icon": "🗿", "text": "Có Tượng Chúa Cứu Thế Christ the Redeemer khổng lồ.", "image": "https://images.unsplash.com/photo-1583795128727-6ec3642408f8?w=800" },
+          { "step": 5, "icon": "⚽", "text": "Quốc gia duy nhất 5 lần vô địch World Cup bóng đá.", "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800" }
+        ],
+        "explanation": "Brazil 🇧🇷 (Rừng Amazon, Vũ điệu Samba, Tượng Chúa Cứu Thế)"
+      },
+      {
+        "id": "country-china",
+        "topic": "🌎 ĐOÁN QUỐC GIA",
+        "country": "Trung Quốc",
+        "flag": "🇨🇳",
+        "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+        "mode": "country-guess",
+        "clues": [
+          { "step": 1, "icon": "🌏", "text": "Quốc gia đông dân hàng đầu thế giới ở Đông Á.", "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800" },
+          { "step": 2, "icon": "🐼", "text": "Quê hương của loài Gấu Trúc cực kỳ đáng yêu.", "image": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef9?w=800" },
+          { "step": 3, "icon": "🍵", "text": "Nơi khởi nguồn của Văn hóa Trà đạo & Tơ lụa.", "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=800" },
+          { "step": 4, "icon": "🧱", "text": "Có kỳ quan Vạn Lý Trường Thành kỳ vĩ.", "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800" },
+          { "step": 5, "icon": "🏯", "text": "Thủ đô Bắc Kinh có Tử Cấm Thành cổ kính.", "image": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800" }
+        ],
+        "explanation": "Trung Quốc 🇨🇳 (Thủ đô Bắc Kinh, Vạn Lý Trường Thành, Gấu Trúc)"
+      }
+    ]
+  },
+  {
+    "name": "🌎 Bộ 3: Đoán Quốc Gia Châu Âu & Đông Nam Á",
+    "topic": "🌎 ĐOÁN QUỐC GIA",
+    "fromFlag": "🌎",
+    "toFlag": "🚩",
+    "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+    "mode": "country-guess",
+    "questions": [
+      {
+        "id": "country-uk",
+        "topic": "🌎 ĐOÁN QUỐC GIA",
+        "country": "Vương quốc Anh (UK)",
+        "flag": "🇬🇧",
+        "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+        "mode": "country-guess",
+        "clues": [
+          { "step": 1, "icon": "🇪🇺", "text": "Quốc gia đảo nằm ở Tây Bắc Châu Âu.", "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800" },
+          { "step": 2, "icon": "🍵", "text": "Truyền thống Uống Trà Chiều (Afternoon Tea) tinh tế.", "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=800" },
+          { "step": 3, "icon": "🚌", "text": "Nổi tiếng với Xe buýt 2 tầng đỏ & Tháp đồng hồ Big Ben.", "image": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=800" },
+          { "step": 4, "icon": "👑", "text": "Quê hương của Hoàng gia Anh & Cung điện Buckingham.", "image": "https://images.unsplash.com/photo-1543832923-44667a44c804?w=800" },
+          { "step": 5, "icon": "⚽", "text": "Nơi có Giải bóng đá Ngoại Hạng Anh (Premier League).", "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800" }
+        ],
+        "explanation": "Vương quốc Anh 🇬🇧 (Thủ đô London, Đồng hồ Big Ben, Ngoại Hạng Anh)"
+      },
+      {
+        "id": "country-vietnam",
+        "topic": "🌎 ĐOÁN QUỐC GIA",
+        "country": "Việt Nam",
+        "flag": "🇻🇳",
+        "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+        "mode": "country-guess",
+        "clues": [
+          { "step": 1, "icon": "🌏", "text": "Nằm ở khu vực Đông Nam Á hình chữ S.", "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800" },
+          { "step": 2, "icon": "🍜", "text": "Món Phở & Bánh Mì nằm trong Top ẩm thực thế giới.", "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=800" },
+          { "step": 3, "icon": "☕", "text": "Quốc gia xuất khẩu Cà phê thứ 2 trên thế giới.", "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800" },
+          { "step": 4, "icon": "⛵", "text": "Có Vịnh Hạ Long - Kỳ quan thiên nhiên thế giới.", "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800" },
+          { "step": 5, "icon": "🏛️", "text": "Thủ đô Hà Nội nghìn năm văn hiến.", "image": "https://images.unsplash.com/photo-1509030450996-939a2635256e?w=800" }
+        ],
+        "explanation": "Việt Nam 🇻🇳 (Thủ đô Hà Nội, Phở, Vịnh Hạ Long, Cà phê)"
+      },
+      {
+        "id": "country-thailand",
+        "topic": "🌎 ĐOÁN QUỐC GIA",
+        "country": "Thái Lan",
+        "flag": "🇹🇭",
+        "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+        "mode": "country-guess",
+        "clues": [
+          { "step": 1, "icon": "🌏", "text": "Quốc gia láng giềng thuộc Đông Nam Á.", "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=800" },
+          { "step": 2, "icon": "🐘", "text": "Được mệnh danh là Xứ sở Chùa Vàng & Voi Trắng.", "image": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800" },
+          { "step": 3, "icon": "🍲", "text": "Nổi tiếng với món Tom Yum cay nồng & Pad Thai.", "image": "https://images.unsplash.com/photo-1559314809-0d155014e29e?w=800" },
+          { "step": 4, "icon": "💦", "text": "Lễ hội tạt nước Songkran đón năm mới cực vui.", "image": "https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=800" },
+          { "step": 5, "icon": "🏙️", "text": "Thủ đô Bangkok sầm uất với nhiều ngôi chùa đẹp.", "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=800" }
+        ],
+        "explanation": "Thái Lan 🇹🇭 (Thủ đô Bangkok, Xứ sở Chùa Vàng, Tom Yum)"
+      },
+      {
+        "id": "country-germany",
+        "topic": "🌎 ĐOÁN QUỐC GIA",
+        "country": "Nước Đức",
+        "flag": "🇩🇪",
+        "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+        "mode": "country-guess",
+        "clues": [
+          { "step": 1, "icon": "🇪🇺", "text": "Nền kinh tế lớn nhất Châu Âu.", "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800" },
+          { "step": 2, "icon": "🍺", "text": "Nổi tiếng với Lễ hội Bia Oktoberfest hoành tráng.", "image": "https://images.unsplash.com/photo-1538485399081-7191377e8241?w=800" },
+          { "step": 3, "icon": "🌭", "text": "Quê hương của Xúc xích Đức & Bánh Pretzel.", "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=800" },
+          { "step": 4, "icon": "🚗", "text": "Nơi sản xuất các hãng xe Mercedes, BMW, Audi.", "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800" },
+          { "step": 5, "icon": "🏙️", "text": "Thủ đô Berlin mang đậm dấu ấn lịch sử.", "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=800" }
+        ],
+        "explanation": "Nước Đức 🇩🇪 (Thủ đô Berlin, Lễ hội Bia Oktoberfest, Xe hơi Mercedes/BMW)"
+      }
+    ]
+  },
+  {
+    "name": "🌎 Bộ 4: Đoán Quốc Gia Châu Phi & Nam Mỹ",
+    "topic": "🌎 ĐOÁN QUỐC GIA",
+    "fromFlag": "🌎",
+    "toFlag": "🚩",
+    "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+    "mode": "country-guess",
+    "questions": [
+      {
+        "id": "country-argentina",
+        "topic": "🌎 ĐOÁN QUỐC GIA",
+        "country": "Argentina",
+        "flag": "🇦🇷",
+        "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+        "mode": "country-guess",
+        "clues": [
+          { "step": 1, "icon": "🌎", "text": "Quốc gia lớn thứ 2 ở khu vực Nam Mỹ.", "image": "https://images.unsplash.com/photo-1589909202802-8f4aadce1849?w=800" },
+          { "step": 2, "icon": "💃", "text": "Quê hương của điệu nhảy Tango quyến rũ.", "image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800" },
+          { "step": 3, "icon": "🥩", "text": "Nổi tiếng với món thịt bò nướng Asado ngon bậc nhất.", "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=800" },
+          { "step": 4, "icon": "⚽", "text": "Quê hương của huyền thoại Maradona & Lionel Messi.", "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800" },
+          { "step": 5, "icon": "🏆", "text": "Đương kim vô địch World Cup 2022.", "image": "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?w=800" }
+        ],
+        "explanation": "Argentina 🇦🇷 (Thủ đô Buenos Aires, Messi, Điệu Tango)"
+      },
+      {
+        "id": "country-australia",
+        "topic": "🌎 ĐOÁN QUỐC GIA",
+        "country": "Nước Úc (Australia)",
+        "flag": "🇦🇺",
+        "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+        "mode": "country-guess",
+        "clues": [
+          { "step": 1, "icon": "🌏", "text": "Quốc gia duy nhất chiếm trọn một lục địa.", "image": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=800" },
+          { "step": 2, "icon": "🦘", "text": "Quê hương của loài Chuột túi Kangaroo & Koala.", "image": "https://images.unsplash.com/photo-1549643276-fdf2fab574f5?w=800" },
+          { "step": 3, "icon": "🏛️", "text": "Có Nhà hát Con Sò Sydney Opera House tuyệt đẹp.", "image": "https://images.unsplash.com/photo-1606820852056-063076774c86?w=800" },
+          { "step": 4, "icon": "🌊", "text": "Sở hữu rạn san hô Great Barrier Reef lớn nhất thế giới.", "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800" },
+          { "step": 5, "icon": "🏛️", "text": "Thủ đô chính thức là Canberra.", "image": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=800" }
+        ],
+        "explanation": "Nước Úc 🇦🇺 (Thủ đô Canberra, Kangaroo, Nhà hát Con Sò Sydney)"
+      },
+      {
+        "id": "country-canada",
+        "topic": "🌎 ĐOÁN QUỐC GIA",
+        "country": "Canada",
+        "flag": "🇨🇦",
+        "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+        "mode": "country-guess",
+        "clues": [
+          { "step": 1, "icon": "🌎", "text": "Quốc gia có diện tích lớn thứ 2 trên thế giới.", "image": "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=800" },
+          { "step": 2, "icon": "🍁", "text": "Lá Phong Đỏ là biểu tượng trên quốc kỳ.", "image": "https://images.unsplash.com/photo-1519817650390-64a93db51149?w=800" },
+          { "step": 3, "icon": "🥞", "text": "Nổi tiếng thế giới với Si-rô Lá Phong ngọt ngào.", "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=800" },
+          { "step": 4, "icon": "🏒", "text": "Khúc côn cầu trên băng (Ice Hockey) là môn thể thao quốc gia.", "image": "https://images.unsplash.com/photo-1580748141549-71748dbe0bdc?w=800" },
+          { "step": 5, "icon": "🏛️", "text": "Thủ đô xinh đẹp là Ottawa.", "image": "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=800" }
+        ],
+        "explanation": "Canada 🇨🇦 (Thủ đô Ottawa, Lá Phong Đỏ, Si-rô Maple)"
+      },
+      {
+        "id": "country-southafrica",
+        "topic": "🌎 ĐOÁN QUỐC GIA",
+        "country": "Nam Phi",
+        "flag": "🇿🇦",
+        "headerTitle": "ĐOÁN QUỐC GIA QUA 5 GỢI Ý",
+        "mode": "country-guess",
+        "clues": [
+          { "step": 1, "icon": "🌍", "text": "Nằm ở cực Nam của lục địa Châu Phi.", "image": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800" },
+          { "step": 2, "icon": "🦁", "text": "Quê hương của các chuyến Safari ngắm động vật hoang dã.", "image": "https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?w=800" },
+          { "step": 3, "icon": "💎", "text": "Nơi phát hiện những mỏ kim cương & vàng khổng lồ.", "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800" },
+          { "step": 4, "icon": "🕊️", "text": "Quê hương của lãnh tụ hòa bình Nelson Mandela.", "image": "https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=800" },
+          { "step": 5, "icon": "🏔️", "text": "Nổi tiếng với Ngọn núi Bàn Table Mountain kỳ lạ.", "image": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=800" }
+        ],
+        "explanation": "Nam Phi 🇿🇦 (Núi Bàn Table Mountain, Kim Cương, Nelson Mandela)"
+      }
+    ]
+  }
+]

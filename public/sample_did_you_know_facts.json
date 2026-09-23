@@ -1,0 +1,222 @@
+[
+  {
+    "name": "💡 1001 Sự Thật Thú Vị - Vũ Trụ & Trái Đất 🌌",
+    "questions": [
+      {
+        "question": "💡 DID YOU KNOW? Bạn có biết một ngày trên Kim Tinh (Venus) dài hơn bao lâu?",
+        "optionA": "Dài hơn 1 năm trên Kim Tinh",
+        "optionB": "Bằng 24 giờ trên Trái Đất",
+        "optionC": "Dài hơn 100 năm Trái Đất",
+        "optionD": "Bằng 12 giờ Trái Đất",
+        "correctOption": "A",
+        "explanation": "Kim Tinh tự quay quanh trục mất 243 ngày Trái Đất, nhưng quay quanh Mặt Trời chỉ mất 225 ngày. Do đó 1 ngày dài hơn 1 năm!",
+        "image": "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800"
+      },
+      {
+        "question": "💡 SỰ THẬT THÚ VỊ: Âm thanh trong không gian vũ trụ truyền đi như thế nào?",
+        "optionA": "Truyền đi rất nhanh",
+        "optionB": "Hoàn toàn không thể truyền đi",
+        "optionC": "Chỉ truyền được sóng cực ngắn",
+        "optionD": "Vang vọng như trong hang động",
+        "correctOption": "B",
+        "explanation": "Vũ trụ là môi trường chân không, không có phân tử không khí để sóng âm lan truyền, nên vũ trụ hoàn toàn yên lặng!",
+        "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800"
+      },
+      {
+        "question": "💡 BẠN CÓ BIẾT: Bao nhiêu phần trăm nước trên Trái Đất là nước ngọt?",
+        "optionA": "Chỉ khoảng 3%",
+        "optionB": "Khoảng 25%",
+        "optionC": "Khoảng 50%",
+        "optionD": "Khoảng 70%",
+        "correctOption": "A",
+        "explanation": "97% nước trên Trái Đất là nước mặn ở đại dương. Trong 3% nước ngọt còn lại, hơn 2/3 bị đóng băng ở 2 cực!",
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800"
+      },
+      {
+        "question": "💡 DID YOU KNOW? Viên kim cương lớn nhất vũ trụ được phát hiện ở đâu?",
+        "optionA": "Trong lõi Trái Đất",
+        "optionB": "Trái tim của một ngôi sao lùn trắng",
+        "optionC": "Trên bề mặt Sao Hỏa",
+        "optionD": "Trong vành đai Sao Thổ",
+        "correctOption": "B",
+        "explanation": "Ngôi sao BPM 37093 (đặt tên là Lucy) là một khối cacbon tinh khiết khổng lồ đã kết tinh thành viên kim cương 10 tỷ tỷ tỷ carat!",
+        "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800"
+      },
+      {
+        "question": "💡 SỰ THẬT THÚ VỊ: Mặt Trăng đang di chuyển ra xa Trái Đất với tốc độ bao nhiêu?",
+        "optionA": "Khoảng 3.8 cm mỗi năm",
+        "optionB": "Khoảng 1 mét mỗi năm",
+        "optionC": "Khoảng 10 km mỗi năm",
+        "optionD": "Mặt Trăng đang tiến lại gần",
+        "correctOption": "A",
+        "explanation": "Do lực thủy triều, Mặt Trăng đang dần rời xa Trái Đất khoảng 3.8cm mỗi năm, tương đương tốc độ phát triển của móng tay người!",
+        "image": "https://images.unsplash.com/photo-1532693322450-2cb5c511067d?w=800"
+      }
+    ]
+  },
+  {
+    "name": "💡 1001 Sự Thật Thú Vị - Kỳ Ẩn Thế Giới Động Vật 🦁",
+    "questions": [
+      {
+        "question": "💡 DID YOU KNOW? Trái tim của cá voi xanh to bằng kích thước của thứ gì?",
+        "optionA": "Một chiếc ô tô nhỏ (Small Car)",
+        "optionB": "Một quả bóng đá",
+        "optionC": "Một chiếc xe máy",
+        "optionD": "Một ngôi nhà 2 tầng",
+        "correctOption": "A",
+        "explanation": "Trái tim cá voi xanh nặng tới 180kg và to tương đương một chiếc xe hơi Volkswagen Beetle, mạch máu rộng tới mức con người có thể chui qua!",
+        "image": "https://images.unsplash.com/photo-1568430462629-a8741d39642d?w=800"
+      },
+      {
+        "question": "💡 SỰ THẬT THÚ VỊ: Loài động vật nào sở hữu 9 bộ não và 3 trái tim?",
+        "optionA": "Bạch tuộc (Octopus)",
+        "optionB": "Cá vàng (Goldfish)",
+        "optionC": "Mèo nhà",
+        "optionD": "Rùa biển",
+        "correctOption": "A",
+        "explanation": "Bạch tuộc có 9 bộ não (1 não chính và 8 não phụ ở 8 tua) cùng 3 trái tim, trí thông minh vượt trội có thể mở nắp chai lọ!",
+        "image": "https://images.unsplash.com/photo-1545671913-b89ac1b4ac10?w=800"
+      },
+      {
+        "question": "💡 BẠN CÓ BIẾT: Dấu vân tay của loài vật nào giống hệt con người?",
+        "optionA": "Gấu Koala",
+        "optionB": "Tinh tinh",
+        "optionC": "Chó Poodle",
+        "optionD": "Hổ bengal",
+        "correctOption": "A",
+        "explanation": "Dấu vân tay của Gấu Koala chi tiết đến mức cảnh sát từng nhầm lẫn với vân tay người tại các hiện trường vụ án!",
+        "image": "https://images.unsplash.com/photo-1540573133985-778788177671?w=800"
+      },
+      {
+        "question": "💡 DID YOU KNOW? Chim hồng hạc (Flamingo) sinh ra có màu lông gì?",
+        "optionA": "Màu xám/trắng",
+        "optionB": "Màu hồng tươi",
+        "optionC": "Màu đỏ cam",
+        "optionD": "Màu vàng chanh",
+        "correctOption": "A",
+        "explanation": "Hồng hạc sinh ra có màu xám trắng. Màu hồng đặc trưng có được là do chế độ ăn nhiều tôm và tảo chứa sắc tố carotenoid!",
+        "image": "https://images.unsplash.com/photo-1516788863098-963d3a042978?w=800"
+      },
+      {
+        "question": "💡 SỰ THẬT THÚ VỊ: Loài động vật có vú duy nhất không thể nhảy là loài nào?",
+        "optionA": "Con voi (Elephant)",
+        "optionB": "Hà mã",
+        "optionC": "Tê giác",
+        "optionD": "Lạc đà",
+        "correctOption": "A",
+        "explanation": "Voi là loài động vật có vú duy nhất trên cạn không thể nhảy do khối lượng cơ thể quá nặng và cấu tạo xương bàn chân đặc thù!",
+        "image": "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=800"
+      }
+    ]
+  },
+  {
+    "name": "💡 1001 Sự Thật Thú Vị - Bí Ẩn Cơ Thể Con Người 🧠",
+    "questions": [
+      {
+        "question": "💡 DID YOU KNOW? Chiều dài tổng cộng của các mạch máu trong cơ thể người là bao nhiêu?",
+        "optionA": "Khoảng 100,000 km (Đi 2.5 vòng Trái Đất)",
+        "optionB": "Khoảng 1,000 km",
+        "optionC": "Khoảng 500 km",
+        "optionD": "Khoảng 10,000 km",
+        "correctOption": "A",
+        "explanation": "Nếu nối tất cả mạch máu của một người trưởng thành lại với nhau, chiều dài lên tới 100,000 km, đủ quấn quanh Trái Đất 2.5 vòng!",
+        "image": "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800"
+      },
+      {
+        "question": "💡 SỰ THẬT THÚ VỊ: Bộ phận nào trên cơ thể người không có mạch máu nuôi dưỡng?",
+        "optionA": "Giác mạc mắt (Cornea)",
+        "optionB": "Cuống lưỡi",
+        "optionC": "Màng nhĩ",
+        "optionD": "Móng tay",
+        "correctOption": "A",
+        "explanation": "Giác mạc lấy oxy trực tiếp từ không khí xung quanh thay vì qua máu. Đó là bộ phận duy nhất không chứa mạch máu!",
+        "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800"
+      },
+      {
+        "question": "💡 BẠN CÓ BIẾT: Cơ bắp nào mạnh nhất tính theo tỉ lệ lực năng lượng?",
+        "optionA": "Cơ nhai (Masseter muscle)",
+        "optionB": "Cơ đùi",
+        "optionC": "Cơ tay",
+        "optionD": "Cơ tim",
+        "correctOption": "A",
+        "explanation": "Cơ nhai ở hàm là cơ bắp mạnh nhất cơ thể tính theo trọng lượng, có thể tạo ra lực cắn lên tới hơn 90kg trên răng hàm!",
+        "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800"
+      },
+      {
+        "question": "💡 DID YOU KNOW? Tốc độ của một cú hắt hơi (Sneeze) có thể đạt tới bao nhiêu?",
+        "optionA": "160 km/h",
+        "optionB": "50 km/h",
+        "optionC": "300 km/h",
+        "optionD": "20 km/h",
+        "correctOption": "A",
+        "explanation": "Cú hắt hơi phóng ra hàng ngàn vi giọt bắn với tốc độ lên tới 160 km/h và di chuyển xa hơn 5 mét trong không khí!",
+        "image": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?w=800"
+      },
+      {
+        "question": "💡 SỰ THẬT THÚ VỊ: Não bộ người tạo ra đủ điện năng để thắp sáng cái gì?",
+        "optionA": "Một bóng đèn LED nhỏ 10-23W",
+        "optionB": "Chỉ đủ chạy đồng hồ đeo tay",
+        "optionC": "Một chiếc TV 55 inch",
+        "optionD": "Không tạo ra điện",
+        "correctOption": "A",
+        "explanation": "Khi thức, não bộ người tạo ra khoảng 10-23 Watt công suất điện năng, đủ để thắp sáng một bóng đèn LED nhỏ năng lượng!",
+        "image": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=800"
+      }
+    ]
+  },
+  {
+    "name": "💡 1001 Sự Thật Thú Vị - Độc Lạ Kỳ Quan & Lịch Sử 🏛️",
+    "questions": [
+      {
+        "question": "💡 DID YOU KNOW? Tháp Eiffel có thể cao thêm bao nhiêu vào mùa hè?",
+        "optionA": "Cao thêm 15 cm",
+        "optionB": "Không thay đổi",
+        "optionC": "Cao thêm 2 mét",
+        "optionD": "Thấp đi 10 cm",
+        "correctOption": "A",
+        "explanation": "Do hiện tượng giãn nở vì nhiệt của kim loại sắt dưới ánh nắng mùa hè, tháp Eiffel cao thêm khoảng 15cm so với mùa đông!",
+        "image": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800"
+      },
+      {
+        "question": "💡 SỰ THẬT THÚ VỊ: Đại Kim Tự Tháp Giza từng được bao phủ bởi lớp vỏ gì?",
+        "optionA": "Đá vôi trắng bóng nhẵn",
+        "optionB": "Vàng nguyên khối",
+        "optionC": "Đất nung đỏ",
+        "optionD": "Gỗ tuyết tùng",
+        "correctOption": "A",
+        "explanation": "Ban đầu kim tự tháp được bao phủ bởi lớp đá vôi trắng được mài nhẵn phản chiếu ánh nắng chói lóa như một viên ngọc khổng lồ!",
+        "image": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?w=800"
+      },
+      {
+        "question": "💡 BẠN CÓ BIẾT: Cuộc chiến ngắn nhất trong lịch sử thế giới kéo dài bao lâu?",
+        "optionA": "38 đến 45 phút",
+        "optionB": "2 ngày",
+        "optionC": "5 giờ",
+        "optionD": "1 tuần",
+        "correctOption": "A",
+        "explanation": "Cuộc chiến Anglo-Zanzibar năm 1896 chỉ kéo dài vỏn vẹn từ 38 đến 45 phút trước khi Vương quốc Zanzibar đầu hàng nước Anh!",
+        "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=800"
+      },
+      {
+        "question": "💡 DID YOU KNOW? Mật ong thiên nhiên (Honey) có bị hỏng theo thời gian không?",
+        "optionA": "Không bao giờ bị hỏng",
+        "optionB": "Hỏng sau 1 năm",
+        "optionC": "Hỏng sau 10 năm",
+        "optionD": "Hỏng khi gặp ánh sáng",
+        "correctOption": "A",
+        "explanation": "Mật ong nguyên chất có độ ẩm cực thấp và độ pH axit giúp ngăn vi khuẩn phát triển. Các nhà khảo cổ từng nếm thử mật ong 3,000 năm tuổi trong lăng mộ Ai Cập vẫn ngon lành!",
+        "image": "https://images.unsplash.com/photo-1587049352847-4a222e784d38?w=800"
+      },
+      {
+        "question": "💡 SỰ THẬT THÚ VỊ: Đất nước nào có nhiều kim tự tháp nhất thế giới?",
+        "optionA": "Sudan (Hơn 220 kim tự tháp)",
+        "optionB": "Ai Cập",
+        "optionC": "Mexico",
+        "optionD": "Trung Quốc",
+        "correctOption": "A",
+        "explanation": "Mặc dù Ai Cập nổi tiếng nhất, nhưng Sudan mới là quốc gia có nhiều kim tự tháp nhất thế giới với hơn 220 kim tự tháp của đế chế Nubia cổ đại!",
+        "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800"
+      }
+    ]
+  }
+]

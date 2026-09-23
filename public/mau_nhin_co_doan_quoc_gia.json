@@ -1,0 +1,262 @@
+[
+  {
+    "name": "Bộ 1: Nhìn Cờ Đoán Quốc Gia - Châu Á",
+    "topic": "NHÌN CỜ ĐOÁN NƯỚC",
+    "headerTitle": "ĐÂY LÀ QUỐC GIA NÀO?",
+    "fromFlag": "🚩",
+    "toFlag": "🏁",
+    "mode": "flags",
+    "questions": [
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "Việt Nam",
+        "optionB": "Trung Quốc",
+        "optionC": "Thái Lan",
+        "optionD": "Nhật Bản",
+        "correctOption": "A",
+        "explanation": "Cờ Việt Nam có nền đỏ tươi với ngôi sao vàng 5 cánh ở trung tâm!",
+        "image": "https://flagcdn.com/w320/vn.png",
+        "mode": "flags"
+      },
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "Hàn Quốc",
+        "optionB": "Nhật Bản",
+        "optionC": "Ấn Độ",
+        "optionD": "Lào",
+        "correctOption": "B",
+        "explanation": "Cờ Nhật Bản có đĩa đỏ tròn ở trung tâm đại diện cho Mặt Trời mọc!",
+        "image": "https://flagcdn.com/w320/jp.png",
+        "mode": "flags"
+      },
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "Lào",
+        "optionB": "Campuchia",
+        "optionC": "Thái Lan",
+        "optionD": "Myanmar",
+        "correctOption": "C",
+        "explanation": "Cờ Thái Lan gồm 5 sọc ngang đỏ - trắng - lam - trắng - đỏ!",
+        "image": "https://flagcdn.com/w320/th.png",
+        "mode": "flags"
+      },
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "Ấn Độ",
+        "optionB": "Bangladesh",
+        "optionC": "Sri Lanka",
+        "optionD": "Pakistan",
+        "correctOption": "A",
+        "explanation": "Cờ Ấn Độ có 3 sọc ngang cam - trắng - xanh lá với bánh xe Ashoka Chakra!",
+        "image": "https://flagcdn.com/w320/in.png",
+        "mode": "flags"
+      },
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "Malaysia",
+        "optionB": "Singapore",
+        "optionC": "Indonesia",
+        "optionD": "Brunei",
+        "correctOption": "B",
+        "explanation": "Cờ Singapore có 2 sọc đỏ - trắng với trăng lưỡi liềm và 5 ngôi sao trắng!",
+        "image": "https://flagcdn.com/w320/sg.png",
+        "mode": "flags"
+      }
+    ]
+  },
+  {
+    "name": "Bộ 2: Nhìn Cờ Đoán Quốc Gia - Châu Âu",
+    "topic": "NHÌN CỜ ĐOÁN NƯỚC",
+    "headerTitle": "ĐÂY LÀ QUỐC GIA NÀO?",
+    "fromFlag": "🚩",
+    "toFlag": "🏁",
+    "mode": "flags",
+    "questions": [
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "Hà Lan",
+        "optionB": "Ý",
+        "optionC": "Pháp",
+        "optionD": "Luxembourg",
+        "correctOption": "C",
+        "explanation": "Cờ Pháp gồm 3 sọc dọc xanh dương - trắng - đỏ!",
+        "image": "https://flagcdn.com/w320/fr.png",
+        "mode": "flags"
+      },
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "Bỉ",
+        "optionB": "Đức",
+        "optionC": "Áo",
+        "optionD": "Hà Lan",
+        "correctOption": "B",
+        "explanation": "Cờ Đức gồm 3 sọc ngang đen - đỏ - vàng!",
+        "image": "https://flagcdn.com/w320/de.png",
+        "mode": "flags"
+      },
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "Vương quốc Anh (UK)",
+        "optionB": "Úc",
+        "optionC": "New Zealand",
+        "optionD": "Ireland",
+        "correctOption": "A",
+        "explanation": "Cờ Union Jack của Vương quốc Anh kết hợp 3 chữ thập cổ truyền!",
+        "image": "https://flagcdn.com/w320/gb.png",
+        "mode": "flags"
+      },
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "Mexico",
+        "optionB": "Ireland",
+        "optionC": "Hungary",
+        "optionD": "Ý (Italy)",
+        "correctOption": "D",
+        "explanation": "Cờ Ý gồm 3 sọc dọc xanh lá - trắng - đỏ!",
+        "image": "https://flagcdn.com/w320/it.png",
+        "mode": "flags"
+      },
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "Bồ Đào Nha",
+        "optionB": "Tây Ban Nha",
+        "optionC": "Andorra",
+        "optionD": "Colombia",
+        "correctOption": "B",
+        "explanation": "Cờ Tây Ban Nha có sọc đỏ - vàng đậm - đỏ với quốc huy ở giữa!",
+        "image": "https://flagcdn.com/w320/es.png",
+        "mode": "flags"
+      }
+    ]
+  },
+  {
+    "name": "Bộ 3: Nhìn Cờ Đoán Quốc Gia - Châu Mỹ",
+    "topic": "NHÌN CỜ ĐOÁN NƯỚC",
+    "headerTitle": "ĐÂY LÀ QUỐC GIA NÀO?",
+    "fromFlag": "🚩",
+    "toFlag": "🏁",
+    "mode": "flags",
+    "questions": [
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "Canada",
+        "optionB": "Mỹ (Hoa Kỳ)",
+        "optionC": "Liberia",
+        "optionD": "Puerto Rico",
+        "correctOption": "B",
+        "explanation": "Cờ Mỹ có 50 ngôi sao trắng trên nền xanh lam và 13 sọc đỏ - trắng!",
+        "image": "https://flagcdn.com/w320/us.png",
+        "mode": "flags"
+      },
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "Canada",
+        "optionB": "Peru",
+        "optionC": "Áo",
+        "optionD": "Thụy Sĩ",
+        "correctOption": "A",
+        "explanation": "Cờ Canada nổi bật với hình chiếc lá phong đỏ ở trung tâm!",
+        "image": "https://flagcdn.com/w320/ca.png",
+        "mode": "flags"
+      },
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "Brazil",
+        "optionB": "Argentina",
+        "optionC": "Bolivia",
+        "optionD": "Paraguay",
+        "correctOption": "A",
+        "explanation": "Cờ Brazil có hình thoi vàng trên nền xanh lá và quả cầu xanh dương!",
+        "image": "https://flagcdn.com/w320/br.png",
+        "mode": "flags"
+      },
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "Uruguay",
+        "optionB": "Argentina",
+        "optionC": "Chile",
+        "optionD": "Guatemala",
+        "correctOption": "B",
+        "explanation": "Cờ Argentina có 3 sọc ngang xanh nhạt - trắng - xanh nhạt với mặt trời ở giữa!",
+        "image": "https://flagcdn.com/w320/ar.png",
+        "mode": "flags"
+      },
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "Ý",
+        "optionB": "Mexico",
+        "optionC": "Hungary",
+        "optionD": "Bulgaria",
+        "correctOption": "B",
+        "explanation": "Cờ Mexico gồm 3 sọc xanh lá - trắng - đỏ với hình đại bàng bắt rắn ở giữa!",
+        "image": "https://flagcdn.com/w320/mx.png",
+        "mode": "flags"
+      }
+    ]
+  },
+  {
+    "name": "Bộ 4: Nhìn Cờ Đoán Quốc Gia - Châu Phi & Úc",
+    "topic": "NHÌN CỜ ĐOÁN NƯỚC",
+    "headerTitle": "ĐÂY LÀ QUỐC GIA NÀO?",
+    "fromFlag": "🚩",
+    "toFlag": "🏁",
+    "mode": "flags",
+    "questions": [
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "Kenya",
+        "optionB": "Nam Phi",
+        "optionC": "Nigeria",
+        "optionD": "Ai Cập",
+        "correctOption": "B",
+        "explanation": "Cờ Nam Phi có 6 màu sắc cùng dải chữ Y tượng trưng cho hòa hợp!",
+        "image": "https://flagcdn.com/w320/za.png",
+        "mode": "flags"
+      },
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "Ai Cập",
+        "optionB": "Iraq",
+        "optionC": "Syria",
+        "optionD": "Yemen",
+        "correctOption": "A",
+        "explanation": "Cờ Ai Cập gồm 3 sọc đỏ - trắng - đen với biểu tượng đại bàng vàng ở giữa!",
+        "image": "https://flagcdn.com/w320/eg.png",
+        "mode": "flags"
+      },
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "Ethiopia",
+        "optionB": "Kenya",
+        "optionC": "Tanzania",
+        "optionD": "Uganda",
+        "correctOption": "B",
+        "explanation": "Cờ Kenya có chiếc khiên và hai cây giáo truyền thống của người Maasai!",
+        "image": "https://flagcdn.com/w320/ke.png",
+        "mode": "flags"
+      },
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "New Zealand",
+        "optionB": "Nước Úc (Australia)",
+        "optionC": "Fiji",
+        "optionD": "Samoa",
+        "correctOption": "B",
+        "explanation": "Cờ Úc có cờ Union Jack cùng Ngôi sao Liên bang 7 cánh và chòm sao Nam Thập Tự!",
+        "image": "https://flagcdn.com/w320/au.png",
+        "mode": "flags"
+      },
+      {
+        "question": "Đây là lá cờ của nước nào?",
+        "optionA": "Nước Úc",
+        "optionB": "New Zealand",
+        "optionC": "Samoa",
+        "optionD": "Fiji",
+        "correctOption": "B",
+        "explanation": "Cờ New Zealand nổi bật với 4 ngôi sao đỏ viền trắng tượng trưng cho chòm sao Nam Thập Tự!",
+        "image": "https://flagcdn.com/w320/nz.png",
+        "mode": "flags"
+      }
+    ]
+  }
+]

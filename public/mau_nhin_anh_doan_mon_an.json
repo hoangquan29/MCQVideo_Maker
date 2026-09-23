@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Bộ 1: Món Ăn Truyền Thống Việt Nam",
+    "topic": "🍳 ĐOÁN MÓN ĂN",
+    "headerTitle": "ĐÂY LÀ MÓN GÌ?",
+    "fromFlag": "🇻🇳",
+    "toFlag": "🍲",
+    "mode": "food-guess",
+    "questions": [
+      {
+        "id": "food-pho",
+        "question": "Đây là món gì?",
+        "dish": "PHỞ BÒ",
+        "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=800",
+        "explanation": "Phở Bò 🍜 (Món quốc phục ẩm thực Việt Nam nổi tiếng toàn cầu)",
+        "mode": "food-guess"
+      },
+      {
+        "id": "food-banhmi",
+        "question": "Đây là món gì?",
+        "dish": "BÁNH MÌ",
+        "image": "https://images.unsplash.com/photo-1626804475297-41607a074eb1?w=800",
+        "explanation": "Bánh Mì 🥖 (Món ăn đường phố ngon hàng đầu thế giới)",
+        "mode": "food-guess"
+      },
+      {
+        "id": "food-buncha",
+        "question": "Đây me món gì?",
+        "dish": "BÚN CHẢ",
+        "image": "https://images.unsplash.com/photo-1541544741938-0af808871cc0?w=800",
+        "explanation": "Bún Chả Hà Nội 🥗 (Thịt nướng thơm lừng ăn kèm nước mắm chua ngọt)",
+        "mode": "food-guess"
+      },
+      {
+        "id": "food-comtam",
+        "question": "Đây là món gì?",
+        "dish": "CƠM TẤM",
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800",
+        "explanation": "Cơm Tấm Sài Gòn 🍛 (Ăn kèm sườn nướng, chả trứng & bì heo)",
+        "mode": "food-guess"
+      },
+      {
+        "id": "food-goicuon",
+        "question": "Đây là món gì?",
+        "dish": "GỎI CUỐN",
+        "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=800",
+        "explanation": "Gỏi Cuốn Tôm Thịt 🥢 (Món thanh mát chấm mắm nêm hoặc tương đậu)",
+        "mode": "food-guess"
+      }
+    ]
+  },
+  {
+    "name": "Bộ 2: Món Ăn Châu Á Nổi Tiếng",
+    "topic": "🍳 ĐOÁN MÓN ĂN",
+    "headerTitle": "ĐÂY LÀ MÓN GÌ?",
+    "fromFlag": "🌏",
+    "toFlag": "🍱",
+    "mode": "food-guess",
+    "questions": [
+      {
+        "id": "food-sushi",
+        "question": "Đây là món gì?",
+        "dish": "SUSHI",
+        "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800",
+        "explanation": "Sushi Nhật Bản 🍣 (Cơm trộn giấm ăn kèm hải sản tươi sống)",
+        "mode": "food-guess"
+      },
+      {
+        "id": "food-dimsum",
+        "question": "Đây là món gì?",
+        "dish": "DIMSUM",
+        "image": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=800",
+        "explanation": "Dimsum Trung Hoa 🥟 (Các món điểm tâm hấp trong lồng tre truyền thống)",
+        "mode": "food-guess"
+      },
+      {
+        "id": "food-tomyum",
+        "question": "Đây là món gì?",
+        "dish": "TOM YUM",
+        "image": "https://images.unsplash.com/photo-1559314809-0d155014e29e?w=800",
+        "explanation": "Canh Tom Yum Thái Lan 🍲 (Vị chua cay nồng nàn thảo mộc & tôm tươi)",
+        "mode": "food-guess"
+      },
+      {
+        "id": "food-kimchi",
+        "question": "Đây là món gì?",
+        "dish": "KIM CHI",
+        "image": "https://images.unsplash.com/photo-1583224964978-2257b960c3d3?w=800",
+        "explanation": "Kim Chi Hàn Quốc 🥬 (Món rau cải muối chua cay lên men truyền thống)",
+        "mode": "food-guess"
+      },
+      {
+        "id": "food-ramen",
+        "question": "Đây là món gì?",
+        "dish": "RAMEN",
+        "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800",
+        "explanation": "Mỳ Ramen Nhật Bản 🍜 (Mỳ nước dùng đậm đà ăn kèm thịt xá xíu)",
+        "mode": "food-guess"
+      }
+    ]
+  },
+  {
+    "name": "Bộ 3: Món Ăn Châu Âu Yêu Thích",
+    "topic": "🍳 ĐOÁN MÓN ĂN",
+    "headerTitle": "ĐÂY LÀ MÓN GÌ?",
+    "fromFlag": "🇪🇺",
+    "toFlag": "🍕",
+    "mode": "food-guess",
+    "questions": [
+      {
+        "id": "food-pizza",
+        "question": "Đây là món gì?",
+        "dish": "PIZZA",
+        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800",
+        "explanation": "Pizza Nước Ý 🍕 (Bánh nướng phủ phô mai Mozzarella & sốt cà chua)",
+        "mode": "food-guess"
+      },
+      {
+        "id": "food-spaghetti",
+        "question": "Đây là món gì?",
+        "dish": "SPAGHETTI",
+        "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=800",
+        "explanation": "Mỳ Ý Spaghetti 🍝 (Sợi mỳ Ý sốt bò băm Bolognese thơm lừng)",
+        "mode": "food-guess"
+      },
+      {
+        "id": "food-hamburger",
+        "question": "Đây là món gì?",
+        "dish": "HAMBURGER",
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800",
+        "explanation": "Bánh Hamburger 🍔 (Bánh mì kẹp thịt bò nướng & rau củ tươi)",
+        "mode": "food-guess"
+      },
+      {
+        "id": "food-steak",
+        "question": "Đây là món gì?",
+        "dish": "BEEFSTEAK",
+        "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=800",
+        "explanation": "Bít Tết Bò Steak 🥩 (Thịt bò áp chảo mềm mọng kèm sốt tiêu đen)",
+        "mode": "food-guess"
+      },
+      {
+        "id": "food-croissant",
+        "question": "Đây là món gì?",
+        "dish": "CROISSANT",
+        "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800",
+        "explanation": "Bánh Sừng Bò Croissant 🥐 (Bánh mì bơ ngàn lớp giòn rụm nước Pháp)",
+        "mode": "food-guess"
+      }
+    ]
+  },
+  {
+    "name": "Bộ 4: Món Ăn Đường Phố Thế Giới",
+    "topic": "🍳 ĐOÁN MÓN ĂN",
+    "headerTitle": "ĐÂY LÀ MÓN GÌ?",
+    "fromFlag": "🌎",
+    "toFlag": "🌮",
+    "mode": "food-guess",
+    "questions": [
+      {
+        "id": "food-tacos",
+        "question": "Đây là món gì?",
+        "dish": "TACOS",
+        "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800",
+        "explanation": "Bánh Tacos Mexico 🌮 (Vỏ bánh ngô kẹp thịt nướng & sốt Salsa)",
+        "mode": "food-guess"
+      },
+      {
+        "id": "food-kebab",
+        "question": "Đây là món gì?",
+        "dish": "DONER KEBAB",
+        "image": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=800",
+        "explanation": "Bánh Mì Kebab Thổ Nhĩ Kỳ 🥙 (Thịt nướng xoay tròn kẹp bánh tam giác)",
+        "mode": "food-guess"
+      },
+      {
+        "id": "food-hotdog",
+        "question": "Đây là món gì?",
+        "dish": "HOTDOG",
+        "image": "https://images.unsplash.com/photo-1619740455993-9e612b1af08a?w=800",
+        "explanation": "Bánh Mì Hotdog 🌭 (Bánh mì dài kẹp xúc xích & tương ớt)",
+        "mode": "food-guess"
+      },
+      {
+        "id": "food-donut",
+        "question": "Đây là món gì?",
+        "dish": "DONUT",
+        "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800",
+        "explanation": "Bánh Vòng Donut 🍩 (Bánh rán hình vòng phủ Socola & kẹo cốm)",
+        "mode": "food-guess"
+      },
+      {
+        "id": "food-paella",
+        "question": "Đây là món gì?",
+        "dish": "PAELLA",
+        "image": "https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=800",
+        "explanation": "Cơm Hải Sản Paella 🥘 (Cơm chiên chảo lớn Tây Ban Nha phủ hải sản)",
+        "mode": "food-guess"
+      }
+    ]
+  }
+]

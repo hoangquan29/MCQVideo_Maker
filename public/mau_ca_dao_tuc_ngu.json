@@ -1,0 +1,130 @@
+[
+  {
+    "name": "🌾 Bộ 1: Ca Dao Tục Ngữ Việt Nam - Điền Từ Mẫu 1",
+    "topic": "CA DAO TỤC NGỮ",
+    "channel": "Ca Dao Việt Nam",
+    "themeColor": "emerald",
+    "logo": "/logo2.png",
+    "fromFlag": "🇻🇳",
+    "toFlag": "🇻🇳",
+    "headerTitle": "ĐIỀN TỪ CÒN THIẾU",
+    "mode": "ca-dao-tuc-ngu",
+    "guessTime": 3,
+    "questions": [
+      {
+        "question": "Nước đổ đầu ___",
+        "word": "Vịt",
+        "topic": "CA DAO TỤC NGỮ",
+        "channel": "Ca Dao Việt Nam",
+        "headerTitle": "ĐIỀN TỪ CÒN THIẾU",
+        "explanation": "Nước đổ đầu vịt (Tục ngữ): Khuyên bảo hay dạy dỗ ai đó mà họ không tiếp thu, coi như không có chuyện gì.",
+        "image": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=800",
+        "mode": "ca-dao-tuc-ngu"
+      },
+      {
+        "question": "Gần mực thì đen, gần đèn thì ___",
+        "word": "Sáng",
+        "topic": "CA DAO TỤC NGỮ",
+        "channel": "Ca Dao Việt Nam",
+        "headerTitle": "ĐIỀN TỪ CÒN THIẾU",
+        "explanation": "Gần mực thì đen, gần đèn thì sáng (Tục ngữ): Môi trường xung ảnh hưởng lớn đến tính cách và đạo đức con người.",
+        "image": "https://images.unsplash.com/photo-1509021436468-d51009049965?w=800",
+        "mode": "ca-dao-tuc-ngu"
+      },
+      {
+        "question": "Ăn quả nhớ kẻ ___",
+        "word": "Trồng cây",
+        "topic": "CA DAO TỤC NGỮ",
+        "channel": "Ca Dao Việt Nam",
+        "headerTitle": "ĐIỀN TỪ CÒN THIẾU",
+        "explanation": "Ăn quả nhớ kẻ trồng cây (Tục ngữ): Thể hiện tinh thần uống nước nhớ nguồn, biết ơn người đi trước.",
+        "image": "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=800",
+        "mode": "ca-dao-tuc-ngu"
+      },
+      {
+        "question": "Có công mài sắt, có ngày ___",
+        "word": "Nên kim",
+        "topic": "CA DAO TỤC NGỮ",
+        "channel": "Ca Dao Việt Nam",
+        "headerTitle": "ĐIỀN TỪ CÒN THIẾU",
+        "explanation": "Có công mài sắt, có ngày nên kim (Tục ngữ): Khuyên con người cần có lòng kiên trì, nhẫn nại sẽ thành công.",
+        "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800",
+        "mode": "ca-dao-tuc-ngu"
+      },
+      {
+        "question": "Một cây làm chẳng nên non, ba cây chụm lại nên ___",
+        "word": "Hòn núi cao",
+        "topic": "CA DAO TỤC NGỮ",
+        "channel": "Ca Dao Việt Nam",
+        "headerTitle": "ĐIỀN TỪ CÒN THIẾU",
+        "explanation": "Một cây làm chẳng nên non, ba cây chụm lại nên hòn núi cao (Ca dao): Sức mạnh của tinh thần đoàn kết tập thể.",
+        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800",
+        "mode": "ca-dao-tuc-ngu"
+      }
+    ]
+  },
+  {
+    "name": "🌾 Bộ 2: Ca Dao Tục Ngữ Việt Nam - Điền Từ Mẫu 2",
+    "topic": "CA DAO TỤC NGỮ",
+    "channel": "Ca Dao Việt Nam",
+    "themeColor": "emerald",
+    "logo": "/logo2.png",
+    "fromFlag": "🇻🇳",
+    "toFlag": "🇻🇳",
+    "headerTitle": "ĐIỀN TỪ CÒN THIẾU",
+    "mode": "ca-dao-tuc-ngu",
+    "guessTime": 3,
+    "questions": [
+      {
+        "question": "Đi một ngày đàng, học một ___",
+        "word": "Sàng khôn",
+        "topic": "CA DAO TỤC NGỮ",
+        "channel": "Ca Dao Việt Nam",
+        "headerTitle": "ĐIỀN TỪ CÒN THIẾU",
+        "explanation": "Đi một ngày đàng, học một sàng khôn (Tục ngữ): Đi nhiều mở rộng tầm mắt, tích lũy thêm tri thức cuộc sống.",
+        "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800",
+        "mode": "ca-dao-tuc-ngu"
+      },
+      {
+        "question": "Tốt gỗ hơn tốt ___",
+        "word": "Nước sơn",
+        "topic": "CA DAO TỤC NGỮ",
+        "channel": "Ca Dao Việt Nam",
+        "headerTitle": "ĐIỀN TỪ CÒN THIẾU",
+        "explanation": "Tốt gỗ hơn tốt nước sơn (Tục ngữ): Phẩm chất bên trong quan trọng hơn vẻ bề ngoài.",
+        "image": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=800",
+        "mode": "ca-dao-tuc-ngu"
+      },
+      {
+        "question": "Thương người như thể thương ___",
+        "word": "Thân",
+        "topic": "CA DAO TỤC NGỮ",
+        "channel": "Ca Dao Việt Nam",
+        "headerTitle": "ĐIỀN TỪ CÒN THIẾU",
+        "explanation": "Thương người như thể thương thân (Tục ngữ): Khuyên con người phải biết yêu thương, giúp đỡ lẫn nhau.",
+        "image": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=800",
+        "mode": "ca-dao-tuc-ngu"
+      },
+      {
+        "question": "Lá lành đùm lá ___",
+        "word": "Rách",
+        "topic": "CA DAO TỤC NGỮ",
+        "channel": "Ca Dao Việt Nam",
+        "headerTitle": "ĐIỀN TỪ CÒN THIẾU",
+        "explanation": "Lá lành đùm lá rách (Tục ngữ): Tinh thần đùm bọc, giúp đỡ người gặp khó khăn hoạn nạn.",
+        "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800",
+        "mode": "ca-dao-tuc-ngu"
+      },
+      {
+        "question": "Chị ngã em ___",
+        "word": "Nâng",
+        "topic": "CA DAO TỤC NGỮ",
+        "channel": "Ca Dao Việt Nam",
+        "headerTitle": "ĐIỀN TỪ CÒN THIẾU",
+        "explanation": "Chị ngã em nâng (Tục ngữ): Tình cảm anh chị em trong gia đình luôn hỗ trợ, đùm bọc nhau.",
+        "image": "https://images.unsplash.com/photo-1485546246426-74dc88dec4d9?w=800",
+        "mode": "ca-dao-tuc-ngu"
+      }
+    ]
+  }
+]

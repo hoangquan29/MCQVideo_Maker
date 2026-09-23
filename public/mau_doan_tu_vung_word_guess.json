@@ -1,0 +1,166 @@
+[
+  {
+    "name": "Bộ 1: Đoán Từ Vựng Tiếng Anh - Động Vật (Animals)",
+    "mode": "word-guess",
+    "questions": [
+      {
+        "question": "What is the name of this animal in English?",
+        "word": "ELEPHANT",
+        "ipa": "/ˈel.ɪ.fənt/",
+        "explanation": "(n) Con voi - Loài động vật trên cạn lớn nhất thế giới!",
+        "image": "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=500"
+      },
+      {
+        "question": "What animal is shown in the picture below?",
+        "word": "LION",
+        "ipa": "/ˈlaɪ.ən/",
+        "explanation": "(n) Sư tử - Chúa tể rừng xanh!",
+        "image": "https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?w=500"
+      },
+      {
+        "question": "Identify this intelligent sea creature:",
+        "word": "DOLPHIN",
+        "ipa": "/ˈdɒl.fɪn/",
+        "explanation": "(n) Cá heo - Loài động vật biển rất thông minh!",
+        "image": "https://images.unsplash.com/photo-1570481662006-a3a1374699e8?w=500"
+      },
+      {
+        "question": "What is the English name for this majestic bird?",
+        "word": "EAGLE",
+        "ipa": "/ˈiː.ɡəl/",
+        "explanation": "(n) Chim đại bàng - Biểu tượng của sức mạnh!",
+        "image": "https://images.unsplash.com/photo-1611689342806-0863700ce1e4?w=500"
+      },
+      {
+        "question": "What is this flightless Antarctic bird called?",
+        "word": "PENGUIN",
+        "ipa": "/ˈpeŋ.ɡwɪn/",
+        "explanation": "(n) Chim cánh cụt - Sống ở Nam Cực!",
+        "image": "https://images.unsplash.com/photo-1598439210625-5067c578f3f6?w=500"
+      }
+    ]
+  },
+  {
+    "name": "Bộ 2: Đoán Từ Vựng Tiếng Anh - Hoa Quả & Món Ăn (Fruits & Food)",
+    "mode": "word-guess",
+    "questions": [
+      {
+        "question": "What fruit is displayed in the picture?",
+        "word": "APPLE",
+        "ipa": "/ˈæp.əl/",
+        "explanation": "(n) Quả táo - An apple a day keeps the doctor away!",
+        "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=500"
+      },
+      {
+        "question": "Which tropical fruit is shown below?",
+        "word": "BANANA",
+        "ipa": "/bəˈnɑː.nə/",
+        "explanation": "(n) Quả chuối - Giàu kali và năng lượng tốt!",
+        "image": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=500"
+      },
+      {
+        "question": "What sweet berry is shown in the image?",
+        "word": "STRAWBERRY",
+        "ipa": "/ˈstrɔː.bər.i/",
+        "explanation": "(n) Quả dâu tây - Ngọt ngào và giàu vitamin C!",
+        "image": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=500"
+      },
+      {
+        "question": "Name this famous Italian food in English:",
+        "word": "PIZZA",
+        "ipa": "/ˈpiːts.ə/",
+        "explanation": "(n) Bánh Pizza - Món ăn ưa thích trên toàn thế giới!",
+        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500"
+      },
+      {
+        "question": "What fast food item is in the picture?",
+        "word": "HAMBURGER",
+        "ipa": "/ˈhæmˌbɜː.ɡər/",
+        "explanation": "(n) Bánh kẹp Hamburger - Món ăn nhanh nổi tiếng!",
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500"
+      }
+    ]
+  },
+  {
+    "name": "Bộ 3: Đoán Từ Vựng Tiếng Anh - Phương Tiện (Vehicles)",
+    "mode": "word-guess",
+    "questions": [
+      {
+        "question": "What fast aircraft is shown in the image?",
+        "word": "AIRPLANE",
+        "ipa": "/ˈeə.pleɪn/",
+        "explanation": "(n) Máy bay - Phương tiện di chuyển trên không!",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=500"
+      },
+      {
+        "question": "Identify this vehicle with rotating blades:",
+        "word": "HELICOPTER",
+        "ipa": "/ˈhel.ɪˌkɒp.tər/",
+        "explanation": "(n) Máy bay trực thuôc - Có cánh quạt cất cánh thẳng đứng!",
+        "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=500"
+      },
+      {
+        "question": "What 2-wheeled eco-friendly vehicle is this?",
+        "word": "BICYCLE",
+        "ipa": "/ˈbaɪ.sɪ.kəl/",
+        "explanation": "(n) Xe đạp - Phương tiện rèn luyện sức khỏe!",
+        "image": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500"
+      },
+      {
+        "question": "What deep-sea underwater vessel is shown?",
+        "word": "SUBMARINE",
+        "ipa": "/ˌsʌb.məˈriːn/",
+        "explanation": "(n) Tàu ngầm - Hoạt động sâu dưới đáy đại dương!",
+        "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500"
+      },
+      {
+        "question": "What 2-wheeled motor vehicle is this?",
+        "word": "MOTORCYCLE",
+        "ipa": "/ˈməʊ.təˌsaɪ.kəl/",
+        "explanation": "(n) Xe máy / Mô tô - Phương tiện cá nhân phổ biến!",
+        "image": "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=500"
+      }
+    ]
+  },
+  {
+    "name": "Bộ 4: Đoán Từ Vựng Tiếng Anh - Đồ Vật Thường Ngày (Objects)",
+    "mode": "word-guess",
+    "questions": [
+      {
+        "question": "What modern mobile gadget is shown here?",
+        "word": "TELEPHONE",
+        "ipa": "/ˈtel.ɪ.fəʊn/",
+        "explanation": "(n) Điện thoại - Thiết bị liên lạc cá nhân!",
+        "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500"
+      },
+      {
+        "question": "What device is used to take photographs?",
+        "word": "CAMERA",
+        "ipa": "/ˈkæm.rə/",
+        "explanation": "(n) Máy ảnh - Lưu giữ những khoảnh khắc đẹp!",
+        "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500"
+      },
+      {
+        "question": "What electronic device is in the picture?",
+        "word": "COMPUTER",
+        "ipa": "/kəmˈpjuː.tər/",
+        "explanation": "(n) Máy tính - Công cụ làm việc và học tập!",
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500"
+      },
+      {
+        "question": "What musical instrument is shown below?",
+        "word": "GUITAR",
+        "ipa": "/ɡɪˈtɑːr/",
+        "explanation": "(n) Đàn ghita - Nhạc cụ dây tạo âm thanh tuyệt vời!",
+        "image": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=500"
+      },
+      {
+        "question": "What item protects you from the rain?",
+        "word": "UMBRELLA",
+        "ipa": "/ʌmˈbrel.ə/",
+        "explanation": "(n) Cái ô / Cái dù - Che mưa và che nắng hiệu quả!",
+        "image": "https://images.unsplash.com/photo-1517479149777-5f3b77a11b9f?w=500"
+      }
+    ]
+  }
+]

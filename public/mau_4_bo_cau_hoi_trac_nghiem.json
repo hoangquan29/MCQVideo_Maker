@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Bộ 1: Đố Vui Trí Tuệ",
+    "questions": [
+      {
+        "question": "Thành phố nào là thủ đô của nước Việt Nam?",
+        "optionA": "TP. Hồ Chí Minh",
+        "optionB": "Hà Nội",
+        "optionC": "Đà Nẵng",
+        "optionD": "Cần Thơ",
+        "correctOption": "B",
+        "explanation": "Hà Nội là thủ đô ngàn năm văn hiến của Việt Nam!"
+      },
+      {
+        "question": "Hành tinh nào nằm gần Mặt Trời nhất trong Hệ Mặt Trời?",
+        "optionA": "Trái Đất",
+        "optionB": "Sao Hỏa",
+        "optionC": "Sao Thủy (Mercury)",
+        "optionD": "Sao Kim (Venus)",
+        "correctOption": "C",
+        "explanation": "Sao Thủy là hành tinh nhỏ nhất và nằm gần Mặt Trời nhất!"
+      },
+      {
+        "question": "Quốc gia nào có diện tích lãnh thổ lớn nhất thế giới?",
+        "optionA": "Nước Nga",
+        "optionB": "Nước Mỹ",
+        "optionC": "Trung Quốc",
+        "optionD": "Canada",
+        "correctOption": "A",
+        "explanation": "Nước Nga có diện tích trải dài trên 17 triệu km²!"
+      },
+      {
+        "question": "Động vật nào là loài có kích thước lớn nhất hành tinh hiện nay?",
+        "optionA": "Voi Châu Phi",
+        "optionB": "Cá voi xanh",
+        "optionC": "Hươu cao cổ",
+        "optionD": "Cá mập trắng",
+        "correctOption": "B",
+        "explanation": "Cá voi xanh có thể nặng tới 180 tấn!"
+      },
+      {
+        "question": "Một năm nhuận theo Dương lịch có bao nhiêu ngày?",
+        "optionA": "365 ngày",
+        "optionB": "366 ngày",
+        "optionC": "364 ngày",
+        "optionD": "367 ngày",
+        "correctOption": "B",
+        "explanation": "Năm nhuận tháng 2 có 29 ngày, tổng cộng 366 ngày!"
+      }
+    ]
+  },
+  {
+    "name": "Bộ 2: Khoa Học & Thiên Nhiên",
+    "questions": [
+      {
+        "question": "Khí nào chiếm tỉ lệ lớn nhất trong không khí Trái Đất?",
+        "optionA": "Khí Ôxi (Oxygen)",
+        "optionB": "Khí Nitơ (Nitrogen)",
+        "optionC": "Khí Cacbonic (CO2)",
+        "optionD": "Khí Hiđrô (Hydrogen)",
+        "correctOption": "B",
+        "explanation": "Khí Nitơ chiếm khoảng 78% thể tích không khí Trái Đất!"
+      },
+      {
+        "question": "Bộ phận nào trên cơ thể người bơm máu đi khắp cơ thể?",
+        "optionA": "Phổi",
+        "optionB": "Gan",
+        "optionC": "Tim",
+        "optionD": "Thận",
+        "correctOption": "C",
+        "explanation": "Trái tim co bóp đẩy máu mang oxy đi nuôi toàn bộ cơ thể!"
+      },
+      {
+        "question": "Chất nào là kim loại duy nhất ở dạng lỏng ở nhiệt độ phòng?",
+        "optionA": "Thủy ngân (Hg)",
+        "optionB": "Sắt (Fe)",
+        "optionC": "Vàng (Au)",
+        "optionD": "Đồng (Cu)",
+        "correctOption": "A",
+        "explanation": "Thủy ngân là kim loại duy nhất thể lỏng ở nhiệt độ thường!"
+      },
+      {
+        "question": "Tốc độ ánh sáng trong chân không khoảng bao nhiêu?",
+        "optionA": "300.000 km/s",
+        "optionB": "150.000 km/s",
+        "optionC": "1.000 km/s",
+        "optionD": "3.000 km/s",
+        "correctOption": "A",
+        "explanation": "Ánh sáng di chuyển xấp xỉ 300.000 km mỗi giây!"
+      },
+      {
+        "question": "Loài chim nào duy nhất trên thế giới có khả năng bay lùi?",
+        "optionA": "Chim Én",
+        "optionB": "Chim Hút Mật (Hummingbird)",
+        "optionC": "Chim Bồ Câu",
+        "optionD": "Chim Đại Bàng",
+        "correctOption": "B",
+        "explanation": "Chim Hút Mật có khớp cánh đặc biệt giúp bay lùi và đứng yên!"
+      }
+    ]
+  },
+  {
+    "name": "Bộ 3: Địa Lý & Văn Hoá Việt Nam",
+    "questions": [
+      {
+        "question": "Ngọn núi nào được mệnh danh là Nóc nhà Đông Dương?",
+        "optionA": "Núi Fansipan",
+        "optionB": "Núi Ba Vì",
+        "optionC": "Núi Yên Tử",
+        "optionD": "Núi Langbiang",
+        correctOption: "A",
+        explanation": "Fansipan cao 3.143m tại Lào Cai, Việt Nam!"
+      },
+      {
+        "question": "Tác phẩm kiệt tác Truyện Kiều là của danh nhân văn hoá nào?",
+        "optionA": "Nguyễn Trãi",
+        "optionB": "Nguyễn Du",
+        "optionC": "Hồ Xuân Hương",
+        optionD: "Đoàn Thị Điểm",
+        correctOption: "B",
+        explanation": "Đại thi hào Nguyễn Du sáng tác Truyện Kiều bất hủ!"
+      },
+      {
+        "question": "Con sông nào dài nhất chảy hoàn toàn trên lãnh thổ Việt Nam?",
+        "optionA": "Sông Hồng",
+        optionB": "Sông Đồng Nai",
+        optionC: "Sông Mê Kông",
+        optionD": "Sông Mã",
+        correctOption: "B",
+        explanation": "Sông Đồng Nai có chiều dài 586 km nội địa Việt Nam!"
+      },
+      {
+        "question": "Vịnh Hạ Long vinh dự thuộc tỉnh nào của Việt Nam?",
+        "optionA": "Hải Phòng",
+        optionB": "Quảng Ninh",
+        optionC: "Thừa Thiên Huế",
+        optionD": "Ninh Bình",
+        correctOption": "B",
+        explanation": "Vịnh Hạ Long là di sản thiên nhiên thế giới thuộc tỉnh Quảng Ninh!"
+      },
+      {
+        "question": "Món ăn nào của Việt Nam được Oxford đưa vào từ điển toàn cầu?",
+        "optionA": "Bún chả",
+        optionB": "Bánh xèo",
+        optionC": "Phở & Bánh mì",
+        optionD": "Gỏi cuốn",
+        correctOption: "C",
+        explanation": "Pho và Banh mi giữ nguyên danh xưng trong từ điển quốc tế!"
+      }
+    ]
+  },
+  {
+    "name": "Bộ 4: Trắc Nghiệm Tiếng Anh Thông Dụng",
+    "questions": [
+      {
+        "question": "Which planet is known as the Red Planet?",
+        "optionA": "Earth",
+        "optionB": "Mars",
+        "optionC": "Jupiter",
+        "optionD": "Venus",
+        correctOption": "B",
+        explanation": "Mars appears red due to iron oxide on its surface!"
+      },
+      {
+        "question": "What is the opposite of the word BUY?",
+        "optionA": "Pay",
+        optionB": "Cost",
+        optionC": "Sell",
+        optionD": "Borrow",
+        correctOption": "C",
+        explanation": "The opposite of buy (mua) is sell (bán)."
+      },
+      {
+        "question": "How many letters are there in the English alphabet?",
+        "optionA": "24 letters",
+        optionB": "25 letters",
+        optionC": "26 letters",
+        optionD": "28 letters",
+        correctOption": "C",
+        explanation": "The modern English alphabet consists of 26 letters."
+      },
+      {
+        "question": "She _____ to school by bus every morning.",
+        "optionA": "go",
+        optionB": "goes",
+        optionC": "going",
+        optionD": "went",
+        correctOption": "B",
+        explanation": "Chủ ngữ ngôi thứ 3 số ít She đi với động từ chia goes."
+      },
+      {
+        "question": "Which ocean is the largest on Earth?",
+        "optionA": "Atlantic Ocean",
+        "optionB": "Pacific Ocean",
+        "optionC": "Indian Ocean",
+        optionD": "Arctic Ocean",
+        correctOption": "B",
+        explanation": "The Pacific Ocean covers over 30% of Earth surface!"
+      }
+    ]
+  }
+]

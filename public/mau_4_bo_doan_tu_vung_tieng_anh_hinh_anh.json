@@ -1,0 +1,222 @@
+[
+  {
+    "name": "Bộ 1: Đoán Từ Vựng Tiếng Anh - Động Vật (Animals)",
+    "questions": [
+      {
+        "question": "What is the name of this animal in English?",
+        "optionA": "Elephant",
+        "optionB": "Rhinoceros",
+        "optionC": "Hippopotamus",
+        "optionD": "Giraffe",
+        "correctOption": "A",
+        "explanation": "Elephant /ˈel.ɪ.fənt/ (n): Con voi - Loài động vật trên cạn lớn nhất thế giới!",
+        "image": "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=400"
+      },
+      {
+        "question": "Which word matches the image below?",
+        "optionA": "Tiger",
+        "optionB": "Lion",
+        "optionC": "Leopard",
+        "optionD": "Cheetah",
+        "correctOption": "B",
+        "explanation": "Lion /ˈlaɪ.ən/ (n): Sư tử - Chúa tể rừng xanh!",
+        "image": "https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?w=400"
+      },
+      {
+        "question": "What animal is shown in the picture?",
+        "optionA": "Shark",
+        "optionB": "Whale",
+        "optionC": "Dolphin",
+        "optionD": "Seal",
+        "correctOption": "C",
+        "explanation": "Dolphin /ˈdɒl.fɪn/ (n): Cá heo - Loài động vật biển rất thông minh!",
+        "image": "https://images.unsplash.com/photo-1570481662006-a3a1374699e8?w=400"
+      },
+      {
+        "question": "Identify this bird in English:",
+        "optionA": "Hawk",
+        "optionB": "Falcon",
+        "optionC": "Eagle",
+        "optionD": "Owl",
+        "correctOption": "C",
+        "explanation": "Eagle /ˈiː.ɡəl/ (n): Chim đại bàng - Biểu tượng của sức mạnh!",
+        "image": "https://images.unsplash.com/photo-1611689342806-0863700ce1e4?w=400"
+      },
+      {
+        "question": "What is this flightless bird called?",
+        "optionA": "Penguin",
+        "optionB": "Puffin",
+        "optionC": "Seagull",
+        "optionD": "Duck",
+        "correctOption": "A",
+        "explanation": "Penguin /ˈpeŋ.ɡwɪn/ (n): Chim cánh cụt - Sống ở vùng Nam Cực lạnh giá!",
+        "image": "https://images.unsplash.com/photo-1598439210625-5067c578f3f6?w=400"
+      }
+    ]
+  },
+  {
+    "name": "Bộ 2: Đoán Từ Vựng Tiếng Anh - Hoa Quả & Thực Phẩm (Fruits & Food)",
+    "questions": [
+      {
+        "question": "What fruit is displayed in the picture?",
+        "optionA": "Peach",
+        "optionB": "Apple",
+        "optionC": "Pear",
+        "optionD": "Plum",
+        "correctOption": "B",
+        "explanation": "Apple /ˈæp.əl/ (n): Quả táo - An apple a day keeps the doctor away!",
+        "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=400"
+      },
+      {
+        "question": "Which tropical fruit is shown below?",
+        "optionA": "Banana",
+        "optionB": "Mango",
+        "optionC": "Papaya",
+        "optionD": "Pineapple",
+        "correctOption": "A",
+        "explanation": "Banana /bəˈnɑː.nə/ (n): Quả chuối - Giàu kali và năng lượng tốt!",
+        "image": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400"
+      },
+      {
+        "question": "What berry is shown in the image?",
+        "optionA": "Cherry",
+        "optionB": "Blueberry",
+        "optionC": "Strawberry",
+        "optionD": "Raspberry",
+        "correctOption": "C",
+        "explanation": "Strawberry /ˈstrɔː.bər.i/ (n): Quả dâu tây - Ngọt ngào và giàu vitamin C!",
+        "image": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=400"
+      },
+      {
+        "question": "Name this popular Italian dish in English:",
+        "optionA": "Pasta",
+        "optionB": "Pizza",
+        "optionC": "Lasagna",
+        "optionD": "Sandwich",
+        "correctOption": "B",
+        "explanation": "Pizza /ˈpiːts.ə/ (n): Bánh Pizza - Món ăn ưa thích trên toàn thế giới!",
+        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400"
+      },
+      {
+        "question": "What fast food item is this?",
+        "optionA": "Hotdog",
+        "optionB": "Taco",
+        "optionC": "Burger",
+        "optionD": "Burrito",
+        "correctOption": "C",
+        "explanation": "Burger /ˈbɜː.ɡər/ (n): Bánh kẹp Hamburger!",
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400"
+      }
+    ]
+  },
+  {
+    "name": "Bộ 3: Đoán Từ Vựng Tiếng Anh - Đồ Vật Hàng Ngày (Everyday Objects)",
+    "questions": [
+      {
+        "question": "What device is shown in the picture?",
+        "optionA": "Watch",
+        "optionB": "Clock",
+        "optionC": "Compass",
+        "optionD": "Timer",
+        "correctOption": "B",
+        "explanation": "Clock /klɒk/ (n): Đồng hồ treo tường / Đồng hồ để bàn!",
+        "image": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=400"
+      },
+      {
+        "question": "Which object is used for taking photos?",
+        "optionA": "Telescope",
+        "optionB": "Microscope",
+        "optionC": "Camera",
+        "optionD": "Projector",
+        "correctOption": "C",
+        "explanation": "Camera /ˈkæm.rə/ (n): Máy ảnh / Máy chụp hình!",
+        "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400"
+      },
+      {
+        "question": "What electronic device is this?",
+        "optionA": "Tablet",
+        "optionB": "Monitor",
+        "optionC": "Laptop",
+        "optionD": "Keyboard",
+        "correctOption": "C",
+        "explanation": "Laptop /ˈlæp.tɒp/ (n): Máy tính xách tay!",
+        "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400"
+      },
+      {
+        "question": "What accessory is used for listening to music?",
+        "optionA": "Speaker",
+        "optionB": "Microphone",
+        "optionC": "Headphones",
+        "optionD": "Earbuds",
+        "correctOption": "C",
+        "explanation": "Headphones /ˈhed.fəʊnz/ (n): Tai nghe trùm đầu!",
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400"
+      },
+      {
+        "question": "What object is used for reading?",
+        "optionA": "Notebook",
+        "optionB": "Magazine",
+        "optionC": "Book",
+        "optionD": "Newspaper",
+        "correctOption": "C",
+        "explanation": "Book /bʊk/ (n): Sách - Kho tàng tri thức!",
+        "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400"
+      }
+    ]
+  },
+  {
+    "name": "Bộ 4: Đoán Từ Vựng Tiếng Anh - Phương Tiện Giao Thông (Vehicles)",
+    "questions": [
+      {
+        "question": "What two-wheeled vehicle is this?",
+        "optionA": "Scooter",
+        "optionB": "Bicycle",
+        "optionC": "Motorcycle",
+        "optionD": "Skateboard",
+        "correctOption": "B",
+        "explanation": "Bicycle /ˈbaɪ.sɪ.kəl/ (n): Xe đạp!",
+        "image": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=400"
+      },
+      {
+        "question": "What mode of air transport is shown?",
+        "optionA": "Rocket",
+        "optionB": "Helicopter",
+        "optionC": "Airplane",
+        "optionD": "Jet",
+        "correctOption": "C",
+        "explanation": "Airplane /ˈeə.pleɪn/ (n): Máy bay!",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400"
+      },
+      {
+        "question": "What aircraft with rotating blades is this?",
+        "optionA": "Glider",
+        "optionB": "Drone",
+        "optionC": "Helicopter",
+        "optionD": "Blimp",
+        "correctOption": "C",
+        "explanation": "Helicopter /ˈhel.ɪˌkɒp.tər/ (n): Máy bay trực thăng!",
+        "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=400"
+      },
+      {
+        "question": "What motorized two-wheeler is shown below?",
+        "optionA": "Bicycle",
+        "optionB": "Motorcycle",
+        "optionC": "Moped",
+        "optionD": "ATV",
+        "correctOption": "B",
+        "explanation": "Motorcycle /ˈməʊ.təˌsaɪ.kəl/ (n): Xe máy / Mô tô!",
+        "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=400"
+      },
+      {
+        "question": "What rail vehicle is depicted in the photo?",
+        "optionA": "Tram",
+        "optionB": "Subway",
+        "optionC": "Train",
+        "optionD": "Monorail",
+        "correctOption": "C",
+        "explanation": "Train /treɪn/ (n): Tàu hỏa / Xe lửa!",
+        "image": "https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=400"
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "id": "top-5-countries",
+  "title": "TOP 5 QUỐC GIA LỚN NHẤT THẾ GIỚI",
+  "subtitle": "Bảng xếp hạng dựa theo Tổng Diện Tích Lãnh Thổ (km²)",
+  "coverImage": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1080&q=80",
+  "theme": "blue-ocean",
+  "voice": "vi-VN-HoaiMyNeural",
+  "voiceSpeed": 1.2,
+  "timePerItem": 5.5,
+  "headerIcon": "🌍",
+  "items": [
+    {
+      "id": 5,
+      "rank": 5,
+      "name": "Brazil 🇧🇷",
+      "badge": "TOP 5",
+      "metric": "Diện tích: ~8,5 Triệu km²",
+      "description": "Quốc gia lớn nhất Nam Mỹ, sở hữu cánh rừng rậm Amazon - \"lá phổi xanh\" của Trái Đất.",
+      "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 4,
+      "rank": 4,
+      "name": "Trung Quốc 🇨🇳",
+      "badge": "TOP 4",
+      "metric": "Diện tích: ~9,6 Triệu km²",
+      "description": "Quốc gia lớn nhất châu Á với bề dày lịch sử hàng ngàn năm cùng kỳ quan Vạn Lý Trường Thành.",
+      "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "name": "Hoa Kỳ (Mỹ) 🇺🇸",
+      "badge": "TOP 3",
+      "metric": "Diện tích: ~9,8 Triệu km²",
+      "description": "Siêu cường kinh tế & quân số thế giới với địa hình đa dạng từ bờ Đông sang bờ Tây.",
+      "image": "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "name": "Canada 🇨🇦",
+      "badge": "TOP 2",
+      "metric": "Diện tích: ~9,98 Triệu km²",
+      "description": "Quốc gia Bắc Mỹ nổi tiếng với cảnh quan thiên nhiên hùng vĩ, hồ nước trong xanh và tuyết trắng.",
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 1,
+      "rank": 1,
+      "name": "Liên Bang Nga 🇷🇺",
+      "badge": "👑 TOP 1",
+      "metric": "Diện tích: ~17,1 Triệu km²",
+      "description": "Quốc gia có diện tích lớn nhất hành tinh, trải dài qua 11 múi giờ trên cả 2 châu lục Á - Âu.",
+      "image": "https://images.unsplash.com/photo-1513326718677-b964603b136d?auto=format&fit=crop&w=800&q=80"
+    }
+  ]
+}

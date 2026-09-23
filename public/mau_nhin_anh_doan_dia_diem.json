@@ -1,0 +1,242 @@
+[
+  {
+    "name": "Bộ 1: Kỳ Quan Thế Giới Nổi Tiếng",
+    "topic": "🏰 ĐOÁN ĐỊA ĐIỂM",
+    "headerTitle": "ĐÂY LÀ ĐÂY?",
+    "fromFlag": "🌍",
+    "toFlag": "🏛️",
+    "mode": "landmark-guess",
+    "questions": [
+      {
+        "id": "landmark-eiffel",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "THÁP EIFFEL",
+        "dish": "THÁP EIFFEL",
+        "word": "THÁP EIFFEL",
+        "image": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?auto=format&fit=crop&w=1200&q=80",
+        "explanation": "Tháp Eiffel 🇫🇷 (Biểu tượng nước Pháp cao 330m xây dựng năm 1889)",
+        "mode": "landmark-guess"
+      },
+      {
+        "id": "landmark-greatwall",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "VẠN LÝ TRƯỜNG THÀNH",
+        "dish": "VẠN LÝ TRƯỜNG THÀNH",
+        "word": "VẠN LÝ TRƯỜNG THÀNH",
+        "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800",
+        "explanation": "Vạn Lý Trường Thành 🇨🇳 (Kỳ quan kiến trúc dài hơn 21.000km ở Trung Quốc)",
+        "mode": "landmark-guess"
+      },
+      {
+        "id": "landmark-pyramids",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "KIM TỰ THÁP GIZA",
+        "dish": "KIM TỰ THÁP GIZA",
+        "word": "KIM TỰ THÁP GIZA",
+        "image": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?w=800",
+        "explanation": "Kim Tự Tháp Giza 🇪🇬 (Kỳ quan cổ đại lâu đời nhất thế giới tại Ai Cập)",
+        "mode": "landmark-guess"
+      },
+      {
+        "id": "landmark-statueofliberty",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "TƯỢNG NỮ THẦN TỰ DO",
+        "dish": "TƯỢNG NỮ THẦN TỰ DO",
+        "word": "TƯỢNG NỮ THẦN TỰ DO",
+        "image": "https://images.unsplash.com/photo-1605130284535-11dd9eedc58a?w=800",
+        "explanation": "Tượng Nữ Thần Tự Do 🇺🇸 (Biểu tượng tự do của nước Mỹ tại New York)",
+        "mode": "landmark-guess"
+      },
+      {
+        "id": "landmark-tajmahal",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "ĐỀN TAJ MAHAL",
+        "dish": "ĐỀN TAJ MAHAL",
+        "word": "ĐỀN TAJ MAHAL",
+        "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800",
+        "explanation": "Đền Taj Mahal 🇮🇳 (Kiệt tác kiến trúc tình yêu lăng mộ đá trắng ở Ấn Độ)",
+        "mode": "landmark-guess"
+      }
+    ]
+  },
+  {
+    "name": "Bộ 2: Địa Điểm Nổi Tiếng Châu Âu",
+    "topic": "🏰 ĐOÁN ĐỊA ĐIỂM",
+    "headerTitle": "ĐÂY LÀ ĐÂY?",
+    "fromFlag": "🇪🇺",
+    "toFlag": "🏰",
+    "mode": "landmark-guess",
+    "questions": [
+      {
+        "id": "landmark-colosseum",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "ĐẤU TRƯỜNG COLOSSEUM",
+        "dish": "ĐẤU TRƯỜNG COLOSSEUM",
+        "word": "ĐẤU TRƯỜNG COLOSSEUM",
+        "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800",
+        "explanation": "Đấu Trường Colosseum 🇮🇹 (Đấu trường La Mã cổ đại tráng lệ ở Rome, Ý)",
+        "mode": "landmark-guess"
+      },
+      {
+        "id": "landmark-pisa",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "THÁP NGHIÊNG PISA",
+        "dish": "THÁP NGHIÊNG PISA",
+        "word": "THÁP NGHIÊNG PISA",
+        "image": "https://images.unsplash.com/photo-1543429776-2782fc8e1acd?w=800",
+        "explanation": "Tháp Nghiêng Pisa 🇮🇹 (Tháp chuông độc đáo với độ nghiêng tự nhiên nổi tiếng ở Ý)",
+        "mode": "landmark-guess"
+      },
+      {
+        "id": "landmark-bigben",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "ĐỒNG HỒ BIG BEN",
+        "dish": "ĐỒNG HỒ BIG BEN",
+        "word": "ĐỒNG HỒ BIG BEN",
+        "image": "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=800",
+        "explanation": "Đồng Hồ Big Ben 🇬🇧 (Biểu tượng đồng hồ lịch sử bên sông Thames, London)",
+        "mode": "landmark-guess"
+      },
+      {
+        "id": "landmark-santorini",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "ĐẢO SANTORINI",
+        "dish": "ĐẢO SANTORINI",
+        "word": "ĐẢO SANTORINI",
+        "image": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800",
+        "explanation": "Đảo Santorini 🇬🇷 (Hòn đảo thiên đường nhà trắng mái vòm xanh tại Hy Lạp)",
+        "mode": "landmark-guess"
+      },
+      {
+        "id": "landmark-neuschwanstein",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "LÂU ĐÀI NEUSCHWANSTEIN",
+        "dish": "LÂU ĐÀI NEUSCHWANSTEIN",
+        "word": "LÂU ĐÀI NEUSCHWANSTEIN",
+        "image": "https://images.unsplash.com/photo-1534313314376-a72289b6181e?w=800",
+        "explanation": "Lâu Đài Neuschwanstein 🇩🇪 (Lâu đài cổ tích tuyệt đẹp ở vùng Bavaria, Đức)",
+        "mode": "landmark-guess"
+      }
+    ]
+  },
+  {
+    "name": "Bộ 3: Danh Thắng Cảnh Việt Nam",
+    "topic": "🏰 ĐOÁN ĐỊA ĐIỂM",
+    "headerTitle": "ĐÂY LÀ ĐÂY?",
+    "fromFlag": "🇻🇳",
+    "toFlag": "⛰️",
+    "mode": "landmark-guess",
+    "questions": [
+      {
+        "id": "landmark-halong",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "VỊNH HẠ LONG",
+        "dish": "VỊNH HẠ LONG",
+        "word": "VỊNH HẠ LONG",
+        "image": "https://images.unsplash.com/photo-1528127269322-539801943592?w=800",
+        "explanation": "Vịnh Hạ Long 🇻🇳 (Di sản thiên nhiên thế giới với hàng ngàn đảo đá vôi)",
+        "mode": "landmark-guess"
+      },
+      {
+        "id": "landmark-cauvang",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "CẦU VÀNG ĐÀ NẮNG",
+        "dish": "CẦU VÀNG ĐÀ NẮNG",
+        "word": "CẦU VÀNG ĐÀ NẮNG",
+        "image": "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=800",
+        "explanation": "Cầu Vàng Bà Nà Hills 🇻🇳 (Cây cầu bàn tay khổng lồ nổi tiếng thế giới tại Đà Nẵng)",
+        "mode": "landmark-guess"
+      },
+      {
+        "id": "landmark-phongnha",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "PHONG NHA KẺ BÀNG",
+        "dish": "PHONG NHA KẺ BÀNG",
+        "word": "PHONG NHA KẺ BÀNG",
+        "image": "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=800",
+        "explanation": "Phong Nha Kẻ Bàng 🇻🇳 (Vương quốc hang động hùng vĩ tại Quảng Bình)",
+        "mode": "landmark-guess"
+      },
+      {
+        "id": "landmark-chuamotcot",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "CHÙA MỘT CỘT",
+        "dish": "CHÙA MỘT CỘT",
+        "word": "CHÙA MỘT CỘT",
+        "image": "https://images.unsplash.com/photo-1596402184320-417e7178b2cd?w=800",
+        "explanation": "Chùa Một Cột 🇻🇳 (Biểu tượng kiến trúc hoa sen độc đáo của Hà Nội)",
+        "mode": "landmark-guess"
+      },
+      {
+        "id": "landmark-trangan",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "TRÀNG AN NINH BÌNH",
+        "dish": "TRÀNG AN NINH BÌNH",
+        "word": "TRÀNG AN NINH BÌNH",
+        "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800",
+        "explanation": "Quần Thể Tràng An 🇻🇳 (Di sản văn hóa và thiên nhiên thế giới ở Ninh Bình)",
+        "mode": "landmark-guess"
+      }
+    ]
+  },
+  {
+    "name": "Bộ 4: Kỳ Quan Thiên Nhiên Thế Giới",
+    "topic": "🏰 ĐOÁN ĐỊA ĐIỂM",
+    "headerTitle": "ĐÂY LÀ ĐÂY?",
+    "fromFlag": "🌏",
+    "toFlag": "🗽",
+    "mode": "landmark-guess",
+    "questions": [
+      {
+        "id": "landmark-fuji",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "NÚI PHÚ SĨ",
+        "dish": "NÚI PHÚ SĨ",
+        "word": "NÚI PHÚ SĨ",
+        "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800",
+        "explanation": "Núi Phú Sĩ 🇯🇵 (Ngọn núi tuyết phủ thiêng liêng biểu tượng của Nhật Bản)",
+        "mode": "landmark-guess"
+      },
+      {
+        "id": "landmark-niagara",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "THÁC NIAGARA",
+        "dish": "THÁC NIAGARA",
+        "word": "THÁC NIAGARA",
+        "image": "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=800",
+        "explanation": "Thác Niagara 🇨🇦 (Hệ thống thác nước siêu hùng vĩ biên giới Mỹ - Canada)",
+        "mode": "landmark-guess"
+      },
+      {
+        "id": "landmark-grandcanyon",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "ĐẠI VỰC GRAND CANYON",
+        "dish": "ĐẠI VỰC GRAND CANYON",
+        "word": "ĐẠI VỰC GRAND CANYON",
+        "image": "https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?w=800",
+        "explanation": "Grand Canyon 🇺🇸 (Hẻm núi đại vực kỳ vĩ và rực rỡ sắc màu tại Arizona, Mỹ)",
+        "mode": "landmark-guess"
+      },
+      {
+        "id": "landmark-sydneyopera",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "NHÀ HÁT OPERA SYDNEY",
+        "dish": "NHÀ HÁT OPERA SYDNEY",
+        "word": "NHÀ HÁT OPERA SYDNEY",
+        "image": "https://images.unsplash.com/photo-1624138784614-87fd1b6528f8?w=800",
+        "explanation": "Nhà Hát Opera Sydney 🇦🇺 (Kiến trúc hình cánh buồm nổi tiếng ở Úc)",
+        "mode": "landmark-guess"
+      },
+      {
+        "id": "landmark-sagrada",
+        "question": "Đây là địa điểm nào?",
+        "landmark": "THÁNH ĐƯỜNG SAGRADA FAMILIA",
+        "dish": "THÁNH ĐƯỜNG SAGRADA FAMILIA",
+        "word": "THÁNH ĐƯỜNG SAGRADA FAMILIA",
+        "image": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800",
+        "explanation": "Sagrada Família 🇪🇸 (Kiệt tác kiến trúc gothic bất hủ của Gaudí tại Barcelona)",
+        "mode": "landmark-guess"
+      }
+    ]
+  }
+]

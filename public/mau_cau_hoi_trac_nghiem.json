@@ -1,0 +1,47 @@
+[
+  {
+    "question": "Thành phố nào là thủ đô của nước Việt Nam?",
+    "optionA": "TP. Hồ Chí Minh",
+    "optionB": "Hà Nội",
+    "optionC": "Đà Nẵng",
+    "optionD": "Cần Thơ",
+    "correctOption": "B",
+    "explanation": "Hà Nội là thủ đô ngàn năm văn hiến của Việt Nam!"
+  },
+  {
+    "question": "Hành tinh nào nằm gần Mặt Trời nhất trong Hệ Mặt Trời?",
+    "optionA": "Trái Đất",
+    "optionB": "Sao Hỏa",
+    "optionC": "Sao Thủy (Mercury)",
+    "optionD": "Sao Kim (Venus)",
+    "correctOption": "C",
+    "explanation": "Sao Thủy là hành tinh nhỏ nhất và nằm gần Mặt Trời nhất!"
+  },
+  {
+    "question": "Quốc gia nào có diện tích lãnh thổ lớn nhất thế giới?",
+    "optionA": "Nước Nga",
+    "optionB": "Nước Mỹ",
+    "optionC": "Trung Quốc",
+    "optionD": "Canada",
+    "correctOption": "A",
+    "explanation": "Nước Nga có diện tích trải dài trên 17 triệu km²!"
+  },
+  {
+    "question": "Động vật nào là loài có kích thước lớn nhất hành tinh hiện nay?",
+    "optionA": "Voi Châu Phi",
+    "optionB": "Cá voi xanh",
+    "optionC": "Hươu cao cổ",
+    "optionD": "Cá mập trắng",
+    "correctOption": "B",
+    "explanation": "Cá voi xanh có thể nặng tới 180 tấn!"
+  },
+  {
+    "question": "Một năm nhuận theo Dương lịch có bao nhiêu ngày?",
+    "optionA": "365 ngày",
+    "optionB": "366 ngày",
+    "optionC": "364 ngày",
+    "optionD": "367 ngày",
+    "correctOption": "B",
+    "explanation": "Năm nhuận tháng 2 có 29 ngày, tổng cộng 366 ngày!"
+  }
+]

@@ -1,0 +1,124 @@
+[
+  {
+    "name": "⚽ Bộ 1: Huyền Thoại Bóng Đá Thế Giới",
+    "topic": "⚽ ĐOÁN CẦU THỦ",
+    "fromFlag": "⚽",
+    "toFlag": "🏆",
+    "headerTitle": "ĐÂY LÀ CẦU THỦ NÀO?",
+    "mode": "player-guess",
+    "guessTime": 3,
+    "questions": [
+      {
+        "id": "player-cr7",
+        "question": "Đây là cầu thủ nào?",
+        "word": "Cristiano Ronaldo",
+        "player": "Cristiano Ronaldo",
+        "optionA": "Cristiano Ronaldo",
+        "image": "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?w=1200&q=80",
+        "explanation": "Cristiano Ronaldo 🇵🇹 (CR7 - Siêu sao sở hữu 5 Quả bóng vàng & hơn 800 bàn thắng)",
+        "mode": "player-guess"
+      },
+      {
+        "id": "player-messi",
+        "question": "Đây là cầu thủ nào?",
+        "word": "Lionel Messi",
+        "player": "Lionel Messi",
+        "optionA": "Lionel Messi",
+        "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1200&q=80",
+        "explanation": "Lionel Messi 🇦🇷 (El Pulga - Huyền thoại Argentina vô địch World Cup 2022 & 8 Quả bóng vàng)",
+        "mode": "player-guess"
+      },
+      {
+        "id": "player-mbappe",
+        "question": "Đây là cầu thủ nào?",
+        "word": "Kylian Mbappe",
+        "player": "Kylian Mbappe",
+        "optionA": "Kylian Mbappe",
+        "image": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1200&q=80",
+        "explanation": "Kylian Mbappé 🇫🇷 (Ninja Rùa - Vua phá lưới World Cup 2022 & siêu sao nước Pháp)",
+        "mode": "player-guess"
+      },
+      {
+        "id": "player-haaland",
+        "question": "Đây là cầu thủ nào?",
+        "word": "Erling Haaland",
+        "player": "Erling Haaland",
+        "optionA": "Erling Haaland",
+        "image": "https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=1200&q=80",
+        "explanation": "Erling Haaland 🇳🇴 (Cỗ máy ghi bàn Na Uy phá vô số kỷ lục Premier League)",
+        "mode": "player-guess"
+      },
+      {
+        "id": "player-neymar",
+        "question": "Đây là cầu thủ nào?",
+        "word": "Neymar Jr",
+        "player": "Neymar Jr",
+        "optionA": "Neymar Jr",
+        "image": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=1200&q=80",
+        "explanation": "Neymar Jr 🇧🇷 (Vũ công Samba - Chân sút vĩ đại bậc nhất lịch sử ĐT Brazil)",
+        "mode": "player-guess"
+      }
+    ]
+  },
+  {
+    "name": "🏆 Bộ 2: Quả Bóng Vàng & Ngôi Sao Đương Đại",
+    "topic": "⚽ ĐOÁN CẦU THỦ",
+    "fromFlag": "⚽",
+    "toFlag": "🏆",
+    "headerTitle": "ĐÂY LÀ CẦU THỦ NÀO?",
+    "mode": "player-guess",
+    "guessTime": 3,
+    "questions": [
+      {
+        "id": "player-benzema",
+        "question": "Đây là cầu thủ nào?",
+        "word": "Karim Benzema",
+        "player": "Karim Benzema",
+        "optionA": "Karim Benzema",
+        "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1200&q=80",
+        "explanation": "Karim Benzema 🇫🇷 (Chủ nhân Quả bóng vàng 2022 & cựu thủ lĩnh Real Madrid)",
+        "mode": "player-guess"
+      },
+      {
+        "id": "player-modric",
+        "question": "Đây là cầu thủ nào?",
+        "word": "Luka Modric",
+        "player": "Luka Modric",
+        "optionA": "Luka Modric",
+        "image": "https://images.unsplash.com/photo-1517649763962-0c623266ddc0?w=1200&q=80",
+        "explanation": "Luka Modrić 🇭🇷 (Nhạc trưởng Croatia giành Quả bóng vàng 2018 & 6 cúp C1)",
+        "mode": "player-guess"
+      },
+      {
+        "id": "player-kdb",
+        "question": "Đây là cầu thủ nào?",
+        "word": "Kevin De Bruyne",
+        "player": "Kevin De Bruyne",
+        "optionA": "Kevin De Bruyne",
+        "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=1200&q=80",
+        "explanation": "Kevin De Bruyne 🇧🇪 (Vua kiến tạo Bỉ - Tiền vệ hàng đầu thế giới của Manchester City)",
+        "mode": "player-guess"
+      },
+      {
+        "id": "player-bellingham",
+        "question": "Đây là cầu thủ nào?",
+        "word": "Jude Bellingham",
+        "player": "Jude Bellingham",
+        "optionA": "Jude Bellingham",
+        "image": "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?w=1200&q=80",
+        "explanation": "Jude Bellingham 🏴󠁧󠁢󠁥󠁮󠁧󠁿 (Thần đồng nước Anh khoác áo số 5 tại Real Madrid)",
+        "mode": "player-guess"
+      },
+      {
+        "id": "player-kane",
+        "question": "Đây là cầu thủ nào?",
+        "word": "Harry Kane",
+        "player": "Harry Kane",
+        "optionA": "Harry Kane",
+        "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1200&q=80",
+        "explanation": "Harry Kane 🏴󠁧󠁢󠁥󠁮󠁧󠁿 (Đội trưởng tuyển Anh & chân sút vĩ đại của Bayern Munich)",
+        "mode": "player-guess"
+      }
+    ]
+  }
+]
