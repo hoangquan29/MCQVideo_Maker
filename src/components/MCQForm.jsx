@@ -474,7 +474,7 @@ export default function MCQForm({
               onClick={() => handleToggleSetMode('food-guess')}
               style={{ background: isFoodGuessMode ? 'linear-gradient(135deg, #FF7043, #E65100)' : '', color: isFoodGuessMode ? '#FFF' : '' }}
             >
-              🍳 Nhìn Hình Đoán Món Ăn (3s Ô Chữ)
+              🍳 Nhìn Hình Đoán Món Ăn (3s - 4 Đáp Án ABCD)
             </button>
             <button
               type="button"

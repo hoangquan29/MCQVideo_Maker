@@ -7,7 +7,32 @@ import { Play, Pause, RotateCcw, Download, Sparkles, Film, Zap, AlertOctagon } f
 
 const FONT_FAMILY = '"Be Vietnam Pro", "Segoe UI", Tahoma, sans-serif';
 
+const isLingoBiBiSetOrQ = (setObj = {}, qObj = {}) => {
+  return !!(
+    (setObj && (
+      setObj.channel === 'Lingo BiBi' ||
+      setObj.themeColor === 'pink' ||
+      setObj.id === 'vocab-b1-word-guess-lingobibi' ||
+      setObj.id === 'lingobibi-flashcard' ||
+      setObj.mode === 'vocab-lingobibi-mcq' ||
+      setObj.mode === 'lingobibi-mcq' ||
+      setObj.mode === 'lingobibi-flashcard'
+    )) ||
+    (qObj && (
+      qObj.channel === 'Lingo BiBi' ||
+      qObj.themeColor === 'pink' ||
+      qObj.mode === 'vocab-lingobibi-mcq' ||
+      qObj.mode === 'lingobibi-mcq' ||
+      qObj.mode === 'lingobibi-flashcard'
+    ))
+  );
+};
+
 const getEffectiveVoice = (voiceSetting, setObj = {}, qObj = {}) => {
+  const isLingoBiBi = isLingoBiBiSetOrQ(setObj, qObj);
+  if (isLingoBiBi) {
+    return (voiceSetting && voiceSetting.startsWith('en-')) ? voiceSetting : 'en-US-AnaNeural';
+  }
   // Đọc câu hỏi/từ gợi ý Tiếng Việt luôn dùng giọng Tiếng Việt Hoài Mỹ Neural
   if (voiceSetting && voiceSetting.startsWith('en-')) {
     return 'vi-VN-HoaiMyNeural';
@@ -282,9 +307,12 @@ export default function MCQVideoPreviewCanvas({ questionSets, activeSetIndex, se
   // Preload speech audio buffers for current set questions in background
   useEffect(() => {
     if (questions && questions.length) {
-      const qSpeechItems = questions.map(q => ({ question: q.question })).filter(i => !!i.question);
-      const effectiveVoice = getEffectiveVoice(settings.voiceLang, activeSet);
-      audioSynth.preloadWordList(qSpeechItems, effectiveVoice, settings.voiceSpeed || 1.25);
+      const isLingoBiBi = isLingoBiBiSetOrQ(activeSet);
+      if (!isLingoBiBi) {
+        const qSpeechItems = questions.map(q => ({ question: q.question })).filter(i => !!i.question);
+        const effectiveVoice = getEffectiveVoice(settings.voiceLang, activeSet);
+        audioSynth.preloadWordList(qSpeechItems, effectiveVoice, settings.voiceSpeed || 1.25);
+      }
 
       if (settings.readAnswer !== false && activeSet?.mode !== 'player-guess' && activeSet?.mode !== 'landmark-guess' && activeSet?.mode !== 'food-guess' && activeSet?.mode !== 'flags') {
         const ansSpeechItems = questions.map(q => {
@@ -1005,7 +1033,8 @@ export default function MCQVideoPreviewCanvas({ questionSets, activeSetIndex, se
         if (isPlayingRef.current) {
           audioSynth.playWhoosh(0.35);
         }
-        if (isPlayingRef.current && activeQ && activeQ.question) {
+        const isLingoBiBi = isLingoBiBiSetOrQ(activeSet, activeQ);
+        if (settings.readQuestion && isPlayingRef.current && activeQ && activeQ.question && !isLingoBiBi) {
           const effectiveVoice = getEffectiveVoice(settings.voiceLang, activeSet, activeQ);
           const ttsQuestionText = getTTSQuestionText(activeQ.question, activeSet?.mode || activeQ.mode);
           TTSService.speak(ttsQuestionText, {
@@ -1029,14 +1058,16 @@ export default function MCQVideoPreviewCanvas({ questionSets, activeSetIndex, se
 
       if (stage === 'reveal' && lastStateRef.current !== 'reveal') {
         const isFlashcardMode = (activeSet?.mode === 'lingobibi-flashcard' || activeQ?.mode === 'lingobibi-flashcard' || activeSet?.id === 'lingobibi-flashcard');
+        const isLingoBiBi = isLingoBiBiSetOrQ(activeSet, activeQ);
         const isCaDaoMode = (activeSet?.mode === 'ca-dao-tuc-ngu' || activeQ?.mode === 'ca-dao-tuc-ngu' || activeSet?.id === 'ca-dao-tuc-ngu');
         const isFlagsOrCountryMode = (activeSet?.mode === 'flags' || activeQ?.mode === 'flags' || activeSet?.id === 'flags' || activeSet?.mode === 'country-guess' || activeQ?.mode === 'country-guess' || activeSet?.id === 'country-guess-5-clues');
-        if (isPlayingRef.current && !isFlashcardMode) {
+        if (isPlayingRef.current && !isFlashcardMode && !isLingoBiBi) {
           triggerConfetti();
           audioSynth.playSuccessFanfare(0.65);
         }
-        const isLandmarkOrFoodMode = (activeSet?.mode === 'landmark-guess' || activeQ?.mode === 'landmark-guess' || activeSet?.mode === 'food-guess' || activeQ?.mode === 'food-guess');
-        if ((settings.readAnswer || isLandmarkOrFoodMode) && isPlayingRef.current && activeQ && !isCaDaoMode && !isFlagsOrCountryMode) {
+        const isLandmarkOrFoodMode = (activeSet?.mode === 'landmark-guess' || activeQ?.mode === 'landmark-guess');
+        const isFoodGuessModeOnly = (activeSet?.mode === 'food-guess' || activeQ?.mode === 'food-guess');
+        if ((settings.readAnswer || isLandmarkOrFoodMode || isLingoBiBi) && !isFoodGuessModeOnly && isPlayingRef.current && activeQ && !isCaDaoMode && !isFlagsOrCountryMode) {
           // Lấy đáp án đúng (Option A, B, C, D hoặc landmark / dish / word)
           const correctKey = (activeQ.correctOption || 'A').toUpperCase();
           let targetWord = activeQ.landmark || activeQ.dish || activeQ.word || '';
@@ -1052,11 +1083,6 @@ export default function MCQVideoPreviewCanvas({ questionSets, activeSetIndex, se
 
           targetWord = (targetWord || '').trim();
           if (targetWord) {
-            const isLingoBiBi = !!(
-              (activeSet && (activeSet.channel === 'Lingo BiBi' || activeSet.themeColor === 'pink' || activeSet.id === 'vocab-b1-word-guess-lingobibi')) ||
-              (activeQ && (activeQ.channel === 'Lingo BiBi' || activeQ.themeColor === 'pink'))
-            );
-
             const isViText = isLandmarkOrFoodMode || (!isLingoBiBi && (
               /[àáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ]/i.test(targetWord) ||
               (activeSet && (activeSet.topic === 'ĐỐ VUI B1' || activeSet.topic === 'TRẮC NGHIỆM B1')) ||
@@ -4219,24 +4245,36 @@ export default function MCQVideoPreviewCanvas({ questionSets, activeSetIndex, se
     drawVignette(ctx);
   };
 
-  // Dedicated Canvas Renderer for "🍳 Nhìn Hình Đoán Món Ăn" (Food Guess Crossword Style)
+  // Dedicated Canvas Renderer for "🍳 Nhìn Hình Đoán Món Ăn" (4 Options ABCD Style)
   const drawFoodGuessCanvasFrame = (ctx, qObj, qIdx, totalQ, stage, timeInQ, stageProgress, theme, currentSet = null) => {
     const safeQObj = qObj || {};
     const targetSet = currentSet || activeSet || {};
     const globalT = performance.now() / 1000;
 
-    const dishName = String(safeQObj.word || safeQObj.optionA || safeQObj.question || 'PHỞ BÒ').toUpperCase().trim();
-    const explanationText = safeQObj.explanation || `${dishName} - Món ăn ngon đặc sắc!`;
     const topicText = (safeQObj.topic || targetSet.topic || '🍳 ĐOÁN MÓN ĂN').toUpperCase();
     const headerTitleText = (safeQObj.headerTitle || targetSet.headerTitle || 'ĐÂY LÀ MÓN GÌ?').toUpperCase();
+    const correctOptionKey = (safeQObj.correctOption || 'A').toUpperCase();
 
+    // 4 Options A, B, C, D
+    const optionA = String(safeQObj.optionA || safeQObj.word || safeQObj.dish || 'Phở Bò').trim();
+    const optionB = String(safeQObj.optionB || 'Bún Chả').trim();
+    const optionC = String(safeQObj.optionC || 'Bánh Mì').trim();
+    const optionD = String(safeQObj.optionD || 'Cơm Tấm').trim();
+    const options = [
+      { key: 'A', text: optionA },
+      { key: 'B', text: optionB },
+      { key: 'C', text: optionC },
+      { key: 'D', text: optionD }
+    ];
+
+    let correctWord = options.find(o => o.key === correctOptionKey)?.text || optionA;
+    const explanationText = safeQObj.explanation || `${correctWord} - Món ăn ngon đặc sắc!`;
     const GUESS_TIME = settings?.guessTime || 3.0;
-    const REVEAL_TIME = 2.0;
 
-    // 1. BACKGROUND: Deep Amber / Warm Coral Gradient
+    // 1. BACKGROUND: Deep Amber / Warm Crimson Coral Gradient
     const bgGrad = ctx.createLinearGradient(0, 0, 1080, 1920);
-    bgGrad.addColorStop(0, '#781D10'); // Deep Warm Burgundy / Crimson
-    bgGrad.addColorStop(0.5, '#C0392B'); // Warm Crimson Red
+    bgGrad.addColorStop(0, '#781D10'); // Deep Warm Crimson
+    bgGrad.addColorStop(0.5, '#C0392B'); // Warm Red
     bgGrad.addColorStop(1, '#3E0A05'); // Dark Mahogany
     ctx.fillStyle = bgGrad;
     ctx.fillRect(0, 0, 1080, 1920);
@@ -4258,10 +4296,10 @@ export default function MCQVideoPreviewCanvas({ questionSets, activeSetIndex, se
       ctx.restore();
     });
 
-    // Screen Border Frame Overlay
+    // Screen Border Frame Overlay (Warm Amber Gold)
     ctx.save();
     ctx.lineWidth = 14;
-    ctx.strokeStyle = 'rgba(255, 213, 79, 0.75)'; // Warm Amber Gold
+    ctx.strokeStyle = 'rgba(255, 213, 79, 0.75)';
     drawRoundRect(ctx, 10, 10, 1060, 1900, 44);
     ctx.stroke();
     ctx.restore();
@@ -4319,7 +4357,7 @@ export default function MCQVideoPreviewCanvas({ questionSets, activeSetIndex, se
     const headerW = Math.max(380, Math.min(700, subMeasuredW + 110));
     const headerH = 68;
     const headerX = 540 - headerW / 2;
-    const headerY = 220;
+    const headerY = 215;
 
     ctx.save();
     ctx.shadowColor = 'rgba(0, 0, 0, 0.3)';
@@ -4337,7 +4375,6 @@ export default function MCQVideoPreviewCanvas({ questionSets, activeSetIndex, se
     const textCenterX = headerX + (headerW - 60) / 2;
     ctx.fillText(headerTitleText, textCenterX, headerY + headerH / 2 + 1);
 
-    // Circle với mũi tên trắng -> bên phải pill
     const arrowCircleX = headerX + headerW - 38;
     const arrowCircleY = headerY + headerH / 2;
     ctx.fillStyle = '#D84315';
@@ -4349,11 +4386,11 @@ export default function MCQVideoPreviewCanvas({ questionSets, activeSetIndex, se
     ctx.fillText('➔', arrowCircleX, arrowCircleY + 1);
     ctx.restore();
 
-    // 5. MAIN HERO DISH IMAGE SHOWCASE CARD (SUPER SIZED HD SHOWCASE 860x480)
-    const imgW = 860;
-    const imgH = 480;
+    // 5. MAIN HERO DISH IMAGE SHOWCASE CARD (880x490)
+    const imgW = 880;
+    const imgH = 490;
     const imgX = 540 - imgW / 2;
-    const imgY = 305;
+    const imgY = 295;
 
     drawDecorationTicks(ctx, 45, imgY + imgH / 2, '#FFE082', 1.2, -0.6);
     drawDecorationTicks(ctx, 1035, imgY + imgH / 2, '#FFE082', 1.2, 0.6);
@@ -4363,11 +4400,11 @@ export default function MCQVideoPreviewCanvas({ questionSets, activeSetIndex, se
     ctx.shadowBlur = 24;
     ctx.shadowOffsetY = 10;
     ctx.fillStyle = '#FFFFFF';
-    drawRoundRect(ctx, imgX - 8, imgY - 8, imgW + 16, imgH + 16, 30);
+    drawRoundRect(ctx, imgX - 8, imgY - 8, imgW + 16, imgH + 16, 32);
     ctx.fill();
     ctx.shadowColor = 'transparent';
 
-    ctx.lineWidth = 4;
+    ctx.lineWidth = 4.5;
     ctx.strokeStyle = '#FF7043';
     ctx.stroke();
     ctx.restore();
@@ -4376,13 +4413,13 @@ export default function MCQVideoPreviewCanvas({ questionSets, activeSetIndex, se
     const dishImgObj = safeQObj.image ? getLoadedImage(safeQObj.image) : null;
     if (dishImgObj) {
       ctx.save();
-      drawRoundRect(ctx, imgX, imgY, imgW, imgH, 24);
+      drawRoundRect(ctx, imgX, imgY, imgW, imgH, 26);
       ctx.clip();
       drawFitImage(ctx, dishImgObj, imgX, imgY, imgW, imgH, { progress: stageProgress, qIdx: qIdx, kenBurns: settings?.imageMotion === true, containFit: true });
       ctx.restore();
     } else {
       ctx.save();
-      drawRoundRect(ctx, imgX, imgY, imgW, imgH, 24);
+      drawRoundRect(ctx, imgX, imgY, imgW, imgH, 26);
       ctx.fillStyle = '#FBE9E7';
       ctx.fill();
       ctx.fillStyle = '#D84315';
@@ -4393,26 +4430,15 @@ export default function MCQVideoPreviewCanvas({ questionSets, activeSetIndex, se
       ctx.restore();
     }
 
-    // Yellow Swoosh Underline below image
-    const swooshY = imgY + imgH + 20;
-    ctx.save();
-    ctx.fillStyle = '#FFE082';
-    ctx.shadowColor = 'rgba(255, 224, 130, 0.6)';
-    ctx.shadowBlur = 10;
-    ctx.beginPath();
-    ctx.ellipse(540, swooshY, 260, 9, -0.02, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.restore();
-
-    // 6. GREEN COUNTDOWN TIMER BAR & BADGE (3s)
-    const barW = 540;
-    const barH = 16;
+    // 6. COUNTDOWN TIMER BAR & BADGE (3s) (Y: 808)
+    const barW = 720;
+    const barH = 18;
     const barX = 540 - barW / 2;
-    const barY = swooshY + 22; // ~694
+    const barY = 808;
 
     ctx.save();
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.35)';
-    drawRoundRect(ctx, barX, barY, barW, barH, 8);
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+    drawRoundRect(ctx, barX, barY, barW, barH, 9);
     ctx.fill();
 
     const fillPercent = stage === 'read' ? 1.0 : (stage === 'guess' ? Math.max(0, 1 - stageProgress) : 0);
@@ -4422,179 +4448,158 @@ export default function MCQVideoPreviewCanvas({ questionSets, activeSetIndex, se
       greenGrad.addColorStop(0, '#00E676');
       greenGrad.addColorStop(1, '#00C853');
       ctx.fillStyle = greenGrad;
-      ctx.shadowColor = 'rgba(0, 230, 118, 0.7)';
-      ctx.shadowBlur = 10;
-      drawRoundRect(ctx, barX, barY, currentBarW, barH, 8);
+      ctx.shadowColor = 'rgba(0, 230, 118, 0.8)';
+      ctx.shadowBlur = 12;
+      drawRoundRect(ctx, barX, barY, currentBarW, barH, 9);
       ctx.fill();
     }
     ctx.restore();
 
-    // 6b. TIMER SECONDS BADGE (⏱️ 3s)
-    const currentGuessDuration = GUESS_TIME;
-    const remainingSec = stage === 'read' ? Math.ceil(currentGuessDuration) : (stage === 'guess' ? Math.max(0, Math.ceil(currentGuessDuration * (1 - stageProgress))) : 0);
-    if (stage === 'guess' || stage === 'read') {
-      ctx.save();
-      const tBadgeW = 95;
-      const tBadgeH = 32;
-      const tBadgeX = barX + barW - tBadgeW;
-      const tBadgeY = barY - 38;
-      ctx.fillStyle = '#00C853';
-      ctx.shadowColor = 'rgba(0, 200, 83, 0.5)';
-      ctx.shadowBlur = 8;
-      drawRoundRect(ctx, tBadgeX, tBadgeY, tBadgeW, tBadgeH, 16);
-      ctx.fill();
-      ctx.shadowColor = 'transparent';
-      ctx.fillStyle = '#FFFFFF';
-      ctx.font = '900 18px "Be Vietnam Pro", sans-serif';
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      ctx.fillText(`⏱️ ${remainingSec}s`, tBadgeX + tBadgeW / 2, tBadgeY + tBadgeH / 2 + 1);
-      ctx.restore();
-    }
-
-    // 7. ANSWER CARD SECTION - WORD SLOT BOXES (O CHU)
-    const ansCardY = barY + 40;
-    const ansCardH = (stage === 'guess' || stage === 'read') ? 310 : 420;
-    const ansCardW = 900;
-    const ansCardX = 540 - ansCardW / 2;
-    const ansTagY = ansCardY - 22;
+    // Timer seconds badge text next to progress bar
+    const remainingSec = stage === 'read' ? Math.ceil(GUESS_TIME) : (stage === 'guess' ? Math.max(1, Math.ceil(GUESS_TIME * (1 - stageProgress))) : 0);
+    let timerText = stage === 'reveal' ? '✅ ĐÁP ÁN!' : `⏱️ ${remainingSec}s`;
 
     ctx.save();
-    ctx.fillStyle = 'rgba(38, 10, 5, 0.95)';
+    ctx.font = '900 22px "Be Vietnam Pro", sans-serif';
+    ctx.fillStyle = stage === 'reveal' ? '#00E676' : '#FFE082';
     ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
-    ctx.shadowBlur = 30;
-    ctx.shadowOffsetY = 15;
-    drawRoundRect(ctx, ansCardX, ansCardY, ansCardW, ansCardH, 40);
-    ctx.fill();
-    ctx.shadowColor = 'transparent';
+    ctx.shadowBlur = 6;
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'bottom';
+    ctx.fillText(timerText, barX + barW, barY - 6);
+    ctx.restore();
 
-    const ansBorderGrad = ctx.createLinearGradient(ansCardX, ansCardY, ansCardX + ansCardW, ansCardY + ansCardH);
-    if (stage === 'reveal') {
-      ansBorderGrad.addColorStop(0, '#00E676');
-      ansBorderGrad.addColorStop(1, '#00C2FF');
-    } else {
-      ansBorderGrad.addColorStop(0, '#FF7043');
-      ansBorderGrad.addColorStop(1, '#E65100');
-    }
-    ctx.lineWidth = 5;
-    ctx.strokeStyle = ansBorderGrad;
-    ctx.stroke();
+    // 7. 4 MULTIPLE CHOICE OPTIONS A, B, C, D (Y: 848 - 1460)
+    const optionW = 880;
+    const optionH = 110;
+    const optionGap = 16;
+    const startOptY = 848;
 
-    // Tag Badge top of Answer Card
-    const tagText = (stage === 'guess' || stage === 'read') ? 'ĐÁP ÁN: (Chữ cái đầu & ô chữ ẩn _ _ _)' : '✨ ĐÁP ÁN CHÍNH XÁC!';
-    const tagBg = (stage === 'guess' || stage === 'read') ? '#FF9800' : '#00E676';
-    const tagW = 680;
-    ctx.fillStyle = tagBg;
-    ctx.shadowColor = 'rgba(0, 0, 0, 0.3)';
-    ctx.shadowBlur = 12;
-    ctx.shadowOffsetY = 4;
-    drawRoundRect(ctx, 540 - tagW / 2, ansTagY, tagW, 48, 24);
-    ctx.fill();
-    ctx.shadowColor = 'transparent';
+    options.forEach((opt, idx) => {
+      const optY = startOptY + idx * (optionH + optionGap);
+      const optX = 540 - optionW / 2;
+      const isCorrect = opt.key === correctOptionKey;
 
-    ctx.fillStyle = '#FFFFFF';
-    ctx.font = '900 23px "Be Vietnam Pro", sans-serif';
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-    ctx.fillText(tagText, 540, ansTagY + 25);
+      let cardBgGrad;
+      let strokeColor = 'rgba(255, 255, 255, 0.4)';
+      let textColor = '#FFFFFF';
+      let badgeBg = '#E65100';
+      let badgeTextColor = '#FFFFFF';
+      let cardAlpha = 1.0;
+      let scaleFactor = 1.0;
 
-    // Letter Slot Boxes (DYNAMIC MULTI-WORD FIT)
-    const letters = dishName.split('');
-    const totalChars = letters.length;
-    const maxContainerW = 820;
-
-    let slotW = Math.min(84, Math.max(34, Math.floor(maxContainerW / Math.max(1, totalChars))));
-    let slotH = Math.round(slotW * 1.25);
-    let slotGap = Math.min(16, Math.max(4, Math.floor((maxContainerW - totalChars * slotW) / Math.max(1, totalChars - 1))));
-    if (slotGap < 4) slotGap = 4;
-
-    const totalSlotsW = totalChars * slotW + (totalChars - 1) * slotGap;
-    const startSlotX = 540 - totalSlotsW / 2;
-    const slotY = ansCardY + 75;
-
-    const revealElapsed = stage === 'reveal' ? stageProgress * REVEAL_TIME : 0;
-
-    letters.forEach((char, i) => {
-      const sx = startSlotX + i * (slotW + slotGap);
-      const isSpace = char === ' ' || char === '-';
-      const isFirstLetterOfWord = i === 0 || (i > 0 && (letters[i - 1] === ' ' || letters[i - 1] === '-'));
-
-      if (isSpace) {
-        ctx.fillStyle = '#FFE082';
-        ctx.font = `900 ${Math.round(slotW * 0.6)}px "Be Vietnam Pro", sans-serif`;
-        ctx.textAlign = 'center';
-        ctx.fillText('-', sx + slotW / 2, slotY + slotH / 2);
-        return;
+      if (stage === 'reveal') {
+        if (isCorrect) {
+          scaleFactor = 1.03 + Math.sin(globalT * 6) * 0.015;
+          strokeColor = '#00E676';
+          badgeBg = '#00E676';
+          badgeTextColor = '#003311';
+          textColor = '#FFFFFF';
+        } else {
+          cardAlpha = 0.45;
+          strokeColor = 'rgba(255, 255, 255, 0.15)';
+        }
       }
 
       ctx.save();
-      let boxBg = 'rgba(255, 255, 255, 0.08)';
-      let boxBorder = 'rgba(255, 255, 255, 0.25)';
-      let charText = '_';
-      let charColor = '#FFE082';
+      ctx.globalAlpha = cardAlpha;
 
-      if (stage === 'guess' || stage === 'read') {
-        if (isFirstLetterOfWord) {
-          boxBg = '#FF5722';
-          boxBorder = '#FFFFFF';
-          charText = char;
-          charColor = '#FFFFFF';
-        } else {
-          charText = '_';
-          charColor = 'rgba(255, 255, 255, 0.7)';
-        }
+      if (stage === 'reveal' && isCorrect) {
+        ctx.translate(540, optY + optionH / 2);
+        ctx.scale(scaleFactor, scaleFactor);
+        ctx.translate(-540, -(optY + optionH / 2));
+
+        ctx.shadowColor = 'rgba(0, 230, 118, 0.8)';
+        ctx.shadowBlur = 28;
+
+        const greenGrad = ctx.createLinearGradient(optX, optY, optX + optionW, optY + optionH);
+        greenGrad.addColorStop(0, '#00C853');
+        greenGrad.addColorStop(1, '#00E676');
+        cardBgGrad = greenGrad;
       } else {
-        const letterDelay = i * 0.05;
-        const letterPopRaw = Math.max(0, Math.min(1, (revealElapsed - letterDelay) / 0.3));
-        const letterPop = easeOutBack(letterPopRaw);
+        ctx.shadowColor = 'rgba(0, 0, 0, 0.35)';
+        ctx.shadowBlur = 14;
+        ctx.shadowOffsetY = 4;
 
-        ctx.translate(sx + slotW / 2, slotY + slotH / 2);
-        ctx.scale(0.85 + letterPop * 0.15, 0.85 + letterPop * 0.15);
-        ctx.translate(-(sx + slotW / 2), -(slotY + slotH / 2));
-
-        const gGrad = ctx.createLinearGradient(sx, slotY, sx + slotW, slotY + slotH);
-        gGrad.addColorStop(0, '#00E676');
-        gGrad.addColorStop(1, '#00C2FF');
-        boxBg = gGrad;
-        boxBorder = '#FFFFFF';
-        charText = char;
-        charColor = '#FFFFFF';
+        const normalGrad = ctx.createLinearGradient(optX, optY, optX + optionW, optY + optionH);
+        normalGrad.addColorStop(0, 'rgba(255, 255, 255, 0.20)');
+        normalGrad.addColorStop(1, 'rgba(255, 255, 255, 0.08)');
+        cardBgGrad = normalGrad;
       }
 
-      ctx.fillStyle = boxBg;
-      ctx.shadowColor = (stage === 'reveal' || isFirstLetterOfWord) ? 'rgba(0, 230, 118, 0.6)' : 'rgba(0, 0, 0, 0.3)';
-      ctx.shadowBlur = (stage === 'reveal' || isFirstLetterOfWord) ? 16 : 8;
-      drawRoundRect(ctx, sx, slotY, slotW, slotH, 18);
+      ctx.fillStyle = cardBgGrad;
+      drawRoundRect(ctx, optX, optY, optionW, optionH, 26);
       ctx.fill();
 
-      ctx.lineWidth = (stage === 'reveal' || isFirstLetterOfWord) ? 3.5 : 2;
-      ctx.strokeStyle = boxBorder;
+      ctx.lineWidth = stage === 'reveal' && isCorrect ? 4.5 : 2.5;
+      ctx.strokeStyle = strokeColor;
       ctx.stroke();
 
-      ctx.fillStyle = charColor;
-      ctx.font = `900 ${Math.round(slotW * 0.62)}px "Be Vietnam Pro", sans-serif`;
+      // Left Option Circle Badge (A, B, C, D)
+      const badgeCircleX = optX + 55;
+      const badgeCircleY = optY + optionH / 2;
+      ctx.fillStyle = badgeBg;
+      ctx.beginPath();
+      ctx.arc(badgeCircleX, badgeCircleY, 26, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.fillStyle = badgeTextColor;
+      ctx.font = '900 28px "Be Vietnam Pro", sans-serif';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      ctx.fillText(charText, sx + slotW / 2, slotY + slotH / 2 + (charText === '_' ? -4 : 2));
+      ctx.fillText(stage === 'reveal' && isCorrect ? '✓' : opt.key, badgeCircleX, badgeCircleY + 1);
+
+      // Option Text
+      ctx.fillStyle = textColor;
+      ctx.font = '900 30px "Be Vietnam Pro", sans-serif';
+      ctx.textAlign = 'left';
+      ctx.textBaseline = 'middle';
+
+      // Auto-fit text if long
+      let optText = opt.text;
+      let optFontPx = 30;
+      ctx.font = `900 ${optFontPx}px "Be Vietnam Pro", sans-serif`;
+      let optTextW = ctx.measureText(optText).width;
+      const maxOptTextW = optionW - 130;
+      while (optFontPx > 20 && optTextW > maxOptTextW) {
+        optFontPx -= 2;
+        ctx.font = `900 ${optFontPx}px "Be Vietnam Pro", sans-serif`;
+        optTextW = ctx.measureText(optText).width;
+      }
+      ctx.fillText(optText, optX + 105, optY + optionH / 2 + 1);
+
       ctx.restore();
     });
 
+    // 8. EXPLANATION BANNER (If reveal stage) (Y: ~1360)
     if (stage === 'reveal') {
-      const panelEntrance = easeOutCubic(Math.min(1, revealElapsed / 0.35));
       ctx.save();
-      ctx.globalAlpha = panelEntrance;
-      const explY = slotY + slotH + 25;
-      ctx.fillStyle = '#FFE082';
-      drawWrappedText(ctx, explanationText, 540, explY, 820, 26, '700', FONT_FAMILY, 3, {
-        minY: explY - 10,
-        maxHeight: 100,
+      const explY = startOptY + 4 * (optionH + optionGap) + 4;
+      const explW = 880;
+      const explH = 90;
+      const explX = 540 - explW / 2;
+
+      ctx.fillStyle = 'rgba(255, 248, 225, 0.95)';
+      ctx.shadowColor = 'rgba(0, 0, 0, 0.4)';
+      ctx.shadowBlur = 18;
+      ctx.shadowOffsetY = 6;
+      drawRoundRect(ctx, explX, explY, explW, explH, 22);
+      ctx.fill();
+
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = '#FFE082';
+      ctx.stroke();
+
+      ctx.fillStyle = '#BF360C';
+      drawWrappedText(ctx, `💡 ${explanationText}`, 540, explY + 16, explW - 40, 24, '800', FONT_FAMILY, 2, {
+        minY: explY + 8,
+        maxHeight: explH - 16,
         minFontSize: 18
       });
       ctx.restore();
     }
-    ctx.restore();
 
-    // 8. BOTTOM FOOTER CTA BANNER
+    // 9. BOTTOM FOOTER CTA BANNER (Y: 1720)
     const footerW = 920;
     const footerH = 110;
     const footerX = 540 - footerW / 2;
@@ -6746,9 +6751,11 @@ export default function MCQVideoPreviewCanvas({ questionSets, activeSetIndex, se
         const qList = setObj.questions || [];
 
         try {
-          const qSpeechItems = qList.map(q => ({ question: q.question })).filter(item => !!item.question);
-          const effectiveVoice = getEffectiveVoice(settings.voiceLang, setObj) || (setObj.mode === 'word-guess' ? 'en-US-AnaNeural' : 'vi-VN-HoaiMyNeural');
-          await audioSynth.preloadWordList(qSpeechItems, effectiveVoice, settings.voiceSpeed || 1.25);
+          if (!isLingoBiBiSetOrQ(setObj)) {
+            const qSpeechItems = qList.map(q => ({ question: q.question })).filter(item => !!item.question);
+            const effectiveVoice = getEffectiveVoice(settings.voiceLang, setObj) || (setObj.mode === 'word-guess' ? 'en-US-AnaNeural' : 'vi-VN-HoaiMyNeural');
+            await audioSynth.preloadWordList(qSpeechItems, effectiveVoice, settings.voiceSpeed || 1.25);
+          }
 
           if (settings.readAnswer !== false && setObj.mode !== 'player-guess' && setObj.mode !== 'landmark-guess' && setObj.mode !== 'food-guess' && setObj.mode !== 'flags') {
             const ansSpeechItems = qList.map(q => {
@@ -6908,7 +6915,8 @@ export default function MCQVideoPreviewCanvas({ questionSets, activeSetIndex, se
               lastExportQIdx = qIdx;
               lastExportSec = -1;
               audioSynth.playWhoosh(0.35, dest);
-              if (activeQ && activeQ.question) {
+              const isLingoBiBi = isLingoBiBiSetOrQ(setObj, activeQ);
+              if (activeQ && activeQ.question && !isLingoBiBi) {
                 const effectiveVoice = getEffectiveVoice(settings.voiceLang, setObj, activeQ);
                 const ttsQuestionText = getTTSQuestionText(activeQ.question, setObj?.mode || activeQ.mode);
                 audioSynth.playSpeech(
@@ -6934,13 +6942,15 @@ export default function MCQVideoPreviewCanvas({ questionSets, activeSetIndex, se
 
             if (stage === 'reveal' && lastExportState !== 'reveal') {
               const isFlashcardMode = (setObj?.mode === 'lingobibi-flashcard' || activeQ?.mode === 'lingobibi-flashcard' || setObj?.id === 'lingobibi-flashcard');
+              const isLingoBiBi = isLingoBiBiSetOrQ(setObj, activeQ);
               const isCaDaoMode = (setObj?.mode === 'ca-dao-tuc-ngu' || activeQ?.mode === 'ca-dao-tuc-ngu' || setObj?.id === 'ca-dao-tuc-ngu');
               const isFlagsOrCountryMode = (setObj?.mode === 'flags' || activeQ?.mode === 'flags' || setObj?.id === 'flags' || setObj?.mode === 'country-guess' || activeQ?.mode === 'country-guess' || setObj?.id === 'country-guess-5-clues');
-              if (!isFlashcardMode) {
+              if (!isFlashcardMode && !isLingoBiBi) {
                 audioSynth.playSuccessFanfare(0.65, dest);
               }
-              const isLandmarkOrFoodExport = (setObj?.mode === 'landmark-guess' || activeQ?.mode === 'landmark-guess' || setObj?.mode === 'food-guess' || activeQ?.mode === 'food-guess');
-              if ((settings.readAnswer || isLandmarkOrFoodExport) && activeQ && !isCaDaoMode && !isFlagsOrCountryMode) {
+              const isLandmarkOrFoodExport = (setObj?.mode === 'landmark-guess' || activeQ?.mode === 'landmark-guess');
+              const isFoodGuessExportOnly = (setObj?.mode === 'food-guess' || activeQ?.mode === 'food-guess');
+              if ((settings.readAnswer || isLandmarkOrFoodExport || isLingoBiBi) && !isFoodGuessExportOnly && activeQ && !isCaDaoMode && !isFlagsOrCountryMode) {
                 const correctKey = (activeQ.correctOption || 'A').toUpperCase();
                 let targetWord = activeQ.landmark || activeQ.dish || activeQ.word || '';
                 if (!targetWord) {
@@ -6955,11 +6965,6 @@ export default function MCQVideoPreviewCanvas({ questionSets, activeSetIndex, se
 
                 targetWord = String(targetWord || '').trim();
                 if (targetWord) {
-                  const isLingoBiBi = !!(
-                    (setObj && (setObj.channel === 'Lingo BiBi' || setObj.themeColor === 'pink' || setObj.id === 'vocab-b1-word-guess-lingobibi')) ||
-                    (activeQ && (activeQ.channel === 'Lingo BiBi' || activeQ.themeColor === 'pink'))
-                  );
-
                   const isViText = isLandmarkOrFoodExport || (!isLingoBiBi && (
                     /[àáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ]/i.test(targetWord) ||
                     (setObj && (setObj.topic === 'ĐỐ VUI B1' || setObj.topic === 'TRẮC NGHIỆM B1')) ||

@@ -1,177 +1,120 @@
 import React from 'react';
 import { 
   Video, 
-  BookOpen, 
-  HelpCircle, 
-  Grid, 
-  Edit3, 
-  Flag, 
-  History, 
-  Lightbulb,
-  Globe,
-  Trophy,
-  Heart,
+  Menu,
+  ChevronLeft,
+  ChevronRight,
   Sparkles,
+  MapPin,
+  Globe,
   Utensils,
-  MapPin
+  Trophy,
+  Flag,
+  History,
+  Lightbulb,
+  BookOpen,
+  Grid,
+  Edit3,
+  Heart
 } from 'lucide-react';
 
 export default function Header({ 
   activeMode, 
   selectedMCQPreset, 
-  onSelectVideoType 
+  isSidebarCollapsed,
+  onToggleSidebar,
+  onToggleMobileSidebar 
 }) {
-  const videoTypes = [
-    {
-      id: 'dia-ly-van-hoa-viet-nam',
-      mode: 'mcq',
-      presetId: 'dia-ly-van-hoa-viet-nam',
-      name: '🇻🇳 Địa Lý & Văn Hóa VN',
-      icon: MapPin
-    },
-    {
-      id: 'landmark-guess',
-      mode: 'mcq',
-      presetId: 'landmark-guess',
-      name: '🏰 Đoán Địa Điểm',
-      icon: Globe
-    },
-    {
-      id: 'food-guess',
-      mode: 'mcq',
-      presetId: 'food-guess',
-      name: '🍳 Đoán Món Ăn',
-      icon: Utensils
-    },
-    {
-      id: 'player-guess',
-      mode: 'mcq',
-      presetId: 'player-guess',
-      name: '⚽ Đoán Cầu Thủ',
-      icon: Trophy
-    },
+  // Helper lấy tên & icon dạng video đang chọn
+  const getActiveModeInfo = () => {
+    if (activeMode === 'top') {
+      return { name: 'Top 10/5 Thú Vị', badgeEmoji: '🏆', icon: Trophy, category: 'Top List' };
+    }
+    if (activeMode === 'vocab') {
+      return { name: 'Từ Vựng BIGO', badgeEmoji: '📖', icon: BookOpen, category: 'Học Từ Vựng' };
+    }
 
-    {
-      id: 'top',
-      mode: 'top',
-      name: '🏆 Top 10/5 Thú Vị',
-      icon: Trophy
-    },
-    {
-      id: 'vocab',
-      mode: 'vocab',
-      name: 'Từ Vựng BIGO',
-      icon: BookOpen
-    },
-    {
-      id: 'ca-dao-tuc-ngu',
-      mode: 'mcq',
-      presetId: 'ca-dao-tuc-ngu',
-      name: '🌾 Ca Dao Tục Ngữ',
-      icon: BookOpen
-    },
-    {
-      id: 'lingobibi-flashcard',
-      mode: 'mcq',
-      presetId: 'lingobibi-flashcard',
-      name: '🎴 Flashcard Lingo BiBi',
-      icon: Sparkles
-    },
-    {
-      id: 'vocab-b1-word-guess-lingobibi',
-      mode: 'mcq',
-      presetId: 'vocab-b1-word-guess-lingobibi',
-      name: '🎀 Từ Vựng Lingo BiBi (4 Đáp Án)',
-      icon: Heart
-    },
-    {
-      id: 'vocab-b1-word-guess',
-      mode: 'mcq',
-      presetId: 'vocab-b1-word-guess',
-      name: 'Đoán Ô Chữ',
-      icon: Grid
-    },
-    {
-      id: 'fill-in-blank-b1-tiktok',
-      mode: 'mcq',
-      presetId: 'fill-in-blank-b1-tiktok',
-      name: 'Điền Từ',
-      icon: Edit3
-    },
-    {
-      id: 'flags',
-      mode: 'mcq',
-      presetId: 'flags',
-      name: 'Đố Cờ Các Nước',
-      icon: Flag
-    },
-    {
-      id: 'history-geo',
-      mode: 'mcq',
-      presetId: 'history-geo',
-      name: 'Đố Lịch Sử',
-      icon: History
-    },
-    {
-      id: 'trivia',
-      mode: 'mcq',
-      presetId: 'trivia',
-      name: 'Đố Mẹo & Tri Thức',
-      icon: Lightbulb
+    switch (selectedMCQPreset) {
+      case 'dia-ly-van-hoa-viet-nam':
+        return { name: 'Địa Lý & Văn Hóa VN', badgeEmoji: '🇻🇳', icon: MapPin, category: 'Trắc Nghiệm' };
+      case 'landmark-guess':
+        return { name: 'Đoán Địa Điểm', badgeEmoji: '🏰', icon: Globe, category: 'Trắc Nghiệm' };
+      case 'food-guess':
+        return { name: 'Đoán Món Ăn', badgeEmoji: '🍳', icon: Utensils, category: 'Trắc Nghiệm' };
+      case 'player-guess':
+        return { name: 'Đoán Cầu Thủ', badgeEmoji: '⚽', icon: Trophy, category: 'Trắc Nghiệm' };
+      case 'flags':
+        return { name: 'Đố Cờ Các Nước', badgeEmoji: '🚩', icon: Flag, category: 'Trắc Nghiệm' };
+      case 'history-geo':
+        return { name: 'Đố Lịch Sử', badgeEmoji: '📜', icon: History, category: 'Trắc Nghiệm' };
+      case 'trivia':
+        return { name: 'Đố Mẹo & Tri Thức', badgeEmoji: '💡', icon: Lightbulb, category: 'Trắc Nghiệm' };
+      case 'lingobibi-flashcard':
+        return { name: 'Flashcard Lingo BiBi', badgeEmoji: '🎴', icon: Sparkles, category: 'Từ Vựng' };
+      case 'vocab-b1-word-guess-lingobibi':
+        return { name: 'Từ Vựng Lingo BiBi (4 Đáp Án)', badgeEmoji: '🎀', icon: Heart, category: 'Từ Vựng' };
+      case 'vocab-b1-word-guess':
+        return { name: 'Đoán Ô Chữ', badgeEmoji: '🔠', icon: Grid, category: 'Từ Vựng' };
+      case 'fill-in-blank-b1-tiktok':
+        return { name: 'Điền Từ', badgeEmoji: '✍️', icon: Edit3, category: 'Từ Vựng' };
+      case 'ca-dao-tuc-ngu':
+        return { name: 'Ca Dao Tục Ngữ', badgeEmoji: '🌾', icon: BookOpen, category: 'Văn Hóa' };
+      default:
+        return { name: 'Trắc Nghiệm Shorts', badgeEmoji: '🧠', icon: Video, category: 'Trắc Nghiệm' };
     }
-  ];
-
-  const isTypeActive = (type) => {
-    if (type.mode === 'top') {
-      return activeMode === 'top';
-    }
-    if (type.mode === 'vocab') {
-      return activeMode === 'vocab';
-    }
-    return activeMode === 'mcq' && selectedMCQPreset === type.presetId;
   };
+
+  const activeInfo = getActiveModeInfo();
+  const ActiveIcon = activeInfo.icon;
 
   return (
     <header className="app-header">
       <div className="header-container">
-        {/* Brand / Logo */}
-        <div className="logo-group">
-          <div className="logo-icon">
-            <Video size={22} />
-          </div>
-          <div className="logo-text-wrapper">
-            <h1 className="app-title">
-              Video Maker <span className="title-highlight">PRO</span>
-            </h1>
-            <span className="app-version-tag">ERP SAAS</span>
+        {/* Trai: Side bar toggle button + Brand / Logo */}
+        <div className="header-left-group">
+          {/* Nút Toggle Sidebar Mobile & Desktop */}
+          <button
+            type="button"
+            className="btn-sidebar-toggle desktop-toggle"
+            onClick={onToggleSidebar}
+            title={isSidebarCollapsed ? "Mở menu bên trái" : "Thu gọn menu"}
+          >
+            <Menu size={19} />
+          </button>
+
+          <button
+            type="button"
+            className="btn-sidebar-toggle mobile-toggle"
+            onClick={onToggleMobileSidebar}
+            title="Mở menu bên trái"
+          >
+            <Menu size={19} />
+          </button>
+
+          <div className="logo-group">
+            <div className="logo-icon">
+              <Video size={22} />
+            </div>
+            <div className="logo-text-wrapper">
+              <h1 className="app-title">
+                Video Maker <span className="title-highlight">PRO</span>
+              </h1>
+              <span className="app-version-tag">ERP SAAS</span>
+            </div>
           </div>
         </div>
 
-        {/* Small Video Types Menu on Navbar */}
-        <nav className="navbar-menu" aria-label="Dạng Video">
-          <span className="navbar-menu-label">DẠNG VIDEO:</span>
-          <div className="navbar-menu-items">
-            {videoTypes.map((type) => {
-              const IconComponent = type.icon;
-              const active = isTypeActive(type);
-              return (
-                <button
-                  key={type.id}
-                  type="button"
-                  className={`nav-menu-item ${active ? 'active' : ''}`}
-                  onClick={() => onSelectVideoType(type)}
-                  title={`Chuyển sang dạng: ${type.name}`}
-                >
-                  <IconComponent size={15} className="nav-item-icon" />
-                  <span className="nav-item-name">{type.name}</span>
-                </button>
-              );
-            })}
+        {/* Giua/Phai: Hien thi Dang Video Hien Tai dang Duoc Chon */}
+        <div className="header-active-mode-display">
+          <span className="mode-display-label">DẠNG VIDEO ĐANG CHỌN:</span>
+          <div className="mode-display-pill">
+            <span className="mode-pill-emoji">{activeInfo.badgeEmoji}</span>
+            <ActiveIcon size={16} className="mode-pill-icon" />
+            <span className="mode-pill-name">{activeInfo.name}</span>
+            <span className="mode-pill-category">{activeInfo.category}</span>
           </div>
-        </nav>
+        </div>
       </div>
     </header>
   );
 }
-
-
